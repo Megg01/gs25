@@ -1,0 +1,10 @@
+@import url(./var.css);
+body{
+        background-color: var(--bg-color);
+        font-family: var(--main-font);
+}
+/* .nav-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+} */
