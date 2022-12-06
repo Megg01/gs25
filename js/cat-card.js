@@ -1,29 +1,23 @@
-class catcard extends HTMLElement {
-        connectedCallback(image, altText, text) {   
+class CategoryCard extends HTMLElement {
+        // constructor() {
+        //         super();
+        // }
+        connectedCallback() {
+                this.img = this.getAttribute('img');
+                this.alt = this.getAttribute('alt');
+                this.text = this.getAttribute('text');
+
                 this.parentNode.innerHTML = `
-                <div>
-                        <img src="${image}" alt="${altText}" width="50px" height="50px">
                         <div>
-                                <h4>${text}</h4>
+                                <div>
+                                        <img src="${this.img}" alt="${this.alt}" width="50px" height="50px">
+                                </div>        
+                                <div>
+                                        <h4>${this.text}</h4>
+                                </div>
                         </div>
-                </div>
-                `
+                `;
         }
 }
-class AppDrawer extends HTMLElement {
-        constructor() {
-                super();
-                
-        }
-        connectedCallback() {
-                
-        }
-        disconnectedCallback() {
-                
-        }
-        attributeChangedCallback(attrName, oldVal, newVal) {
-        
-        }
-    }
 
-customElements.define("gs25-cat-card", catcard);
+customElements.define("gs25-cat-card", CategoryCard);
