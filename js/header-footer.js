@@ -1,23 +1,23 @@
 class header extends HTMLElement {
         connectedCallback() {
                 this.parentNode.innerHTML = `
-                        <section>
-                
+                        <section class="eng-version">
+                                <p>ENG</p>
                         </section>
-                        <section>
-                        <picture>
-                                <a href="index.html">
-                                <img src="./img/logo.svg" alt="GS25 Logo" width="100px" height="40px">
-                                </a>
-                        </picture>
-                        <nav>
-                                <ul>
-                                <li><a href="product.html">Бүтээгдэхүүн</a></li>
-                                <li><a href="location.html">Байршил</a></li>
-                                <li><a href="hr.html">Хүний нөөц</a></li>
-                                <li><a href="aboutus.html">Бидний тухай</a></li>
-                                </ul>
-                        </nav>
+                        <section class="navigation">
+                                <section>
+                                        <a href="index.html">
+                                                <img src="./img/gs25-logo.webp" alt="GS25 Logo" width="130px" height="41.119px">
+                                        </a>
+                                </section>
+                                <nav class="navigation-menu">
+                                        <ul>
+                                                <li class="nav-item"><a href="product.html">Бүтээгдэхүүн</a></li>
+                                                <li class="nav-item"><a href="location.html">Байршил</a></li>
+                                                <li class="nav-item"><a href="hr.html">Хүний нөөц</a></li>
+                                                <li class="nav-item"><a href="aboutus.html">Бидний тухай</a></li>
+                                        </ul>
+                                </nav>
                         </section>
                 `
         }
