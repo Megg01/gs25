@@ -12,6 +12,7 @@ class header extends HTMLElement {
                                 </section>
                                 <nav class="navigation-menu">
                                         <ul>
+                                                <li class="nav-item"><a href="index.html">Нүүр хуудас</a></li>
                                                 <li class="nav-item"><a href="product.html">Бүтээгдэхүүн</a></li>
                                                 <li class="nav-item"><a href="location.html">Байршил</a></li>
                                                 <li class="nav-item"><a href="hr.html">Хүний нөөц</a></li>

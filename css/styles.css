@@ -63,6 +63,12 @@ body{
         justify-content: space-between;
         align-items: center;
 }
+.product-normal-cards-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+}
 #product-cards{
         display: flex;
         flex-direction: row;
@@ -75,8 +81,22 @@ body{
         margin: 1em;
         transition: 0.3s;
         width: 10em;
-        height: 14em;
+        height: 12.5em;
         position: relative;
+}
+.product-card:hover {
+        border-color: var(--second-color);
+        color: black;
+        scale: 1.1;
+        box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
+        height: 14em;
+}
+.product-card-price{
+        visibility: collapse;
+}
+.product-card:hover .product-card-price{
+        transition: 2s;
+        visibility: visible;
 }
 .product-card > img{
         display: block;
