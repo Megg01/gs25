@@ -9,7 +9,7 @@ class ProductCardItem{
                 return `
                 <div class="product-card">
                         <img src="${this.src}" alt="${this.alt}">
-                        <h4>${this.text}</h4>
+                        <h4>${this.name}</h4>
                         <p class="product-card-price">${this.price}</p>
                 </div>
                 `;
@@ -29,31 +29,31 @@ window.onload = () => App(ProductCardData, "product-cards");
 const ProductCardData =
 [
         {
-                "src": "product-img/product-hotdog1.webp",
+                "src": "img/product-img/product-hotdog1.webp",
                 "alt": "hotdog",
                 "name": "Франкфурт хотдог / бяслагтай /",
                 "price": "3,000₮"
         },
         {
-                "src": "product-img/product-hotdog2.webp",
+                "src": "img/product-img/product-hotdog2.webp",
                 "alt": "hotdog",
                 "name": "Тахиан махан хотдог / бяслагтай /",
                 "price": "3,000₮"
         },
         {
-                "src": "product-img/product-chicken1.webp",
+                "src": "img/product-img/product-chicken1.webp",
                 "alt": "chicken",
                 "name": "Chicken25 /org/ box",
                 "price": "22,000₮"
         },
         {
-                "src": "product-img/product-coffee1.webp",
+                "src": "img/product-img/product-coffee1.webp",
                 "alt": "coffee",
                 "name": "Кафе25 Aмерикано",
                 "price": "3,500₮"
         },
         {
-                "src": "product-img/product-pepsi1.webp",
+                "src": "img/product-img/product-pepsi1.webp",
                 "alt": "pepsi",
                 "name": "Pepsi аягатай",
                 "price": "1,600₮"

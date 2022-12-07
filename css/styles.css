@@ -57,7 +57,13 @@ body{
 .category-cards > div:hover {
         box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
 }
-.product-cards{
+.product-homepage-continue{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+}
+#product-cards{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -70,12 +76,20 @@ body{
         transition: 0.3s;
         width: 10em;
         height: 14em;
+        position: relative;
 }
 .product-card > img{
         display: block;
         margin-left: auto;
         margin-right: auto;
+        width: 90%;
 }
-.product-card h5{
+.product-card h4{
+        margin: 0.5em 0 0 0;
+}
+.product-card p{
+        position: absolute;
         margin: 0;
+        bottom: 0.5em;
+        left: 1em;
 }
