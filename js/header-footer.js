@@ -16,7 +16,7 @@ class header extends HTMLElement {
                                                 <li class="nav-item"><a href="product.html">Бүтээгдэхүүн</a></li>
                                                 <li class="nav-item"><a href="location.html">Байршил</a></li>
                                                 <li class="nav-item"><a href="hr.html">Хүний нөөц</a></li>
-                                                <li class="nav-item"><a href="aboutus.html">Бидний тухай</a></li>
+                                                <li class="nav-item"><a href="about.html">Бидний тухай</a></li>
                                         </ul>
                                 </nav>
                         </section>
