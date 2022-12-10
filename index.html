@@ -27,7 +27,19 @@
     </header>
     <main>
         <section class="slider-img">
-            <img src="./img/gs25-slider.webp" alt="GS25 Slider image" width="1000px" height="381px">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="img/gs25-slide2.webp" alt="gs25-slide" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="img/gs25-slide4.webp" alt="gs25-slide" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="img/gs25-slide3.webp" alt="gs25-slide" style="width:100%">
+                </div>
+            </div>
         </section>
         <section class="category-cards">
             <div>
@@ -71,34 +83,34 @@
             <section>
                 <section class="product-homepage-continue">
                     <h4>БҮТЭЭГДЭХҮҮН</h4>
-                    <button>Үргэлжлүүлэх</button>
+                    <button>Цааш үзэх</button>
                 </section>
                 <section class="product-normal-cards-container">
-                    <button>
+                    <div class="product-card-left">
                         <img src="img/arrow.svg" alt="button">
-                    </button>
-                    <section id="product-normal-cards">
+                    </div>
+                    <section class="product-cards">
                         
                     </section>
-                    <button>
+                    <div class="product-card-right">
                         <img src="img/arrow1.svg" alt="button">
-                    </button>
+                    </div>
                 </section>
             </section>
             <section>
-                <section class="product-homepage-continue">
+                <section class="product-bonus-homepage-continue">
                     <h4>БЭЛЭГТЭЙ, УРАМШУУЛАЛТАЙ БҮТЭЭГДЭХҮҮН</h4>
-                    <button>Үргэлжлүүлэх</button>
+                    <button>Цааш үзэх</button>
                 </section>
                 <section class="product-bonus-cards-container">
-                    <button>
+                    <div class="product-bonus-card-left">
                         <img src="img/arrow.svg" alt="button">
-                    </button>
-                    <section id="product-bonus-cards">
+                    </div>
+                    <section class="product-bonus-cards">
                     </section>
-                    <button>
+                    <div class="product-bonus-card-left">
                         <img src="img/arrow1.svg" alt="button">
-                    </button>
+                    </div>
                 </section>
             </section>
         </section>
@@ -108,6 +120,6 @@
     </footer>
     <script src="js/header-footer.js"></script>
     <script src="js/product-card.js"></script>
-    <script src="js/product-bonus-card.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 </html>

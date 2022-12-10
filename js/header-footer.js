@@ -1,9 +1,6 @@
 class header extends HTMLElement {
         connectedCallback() {
                 this.parentNode.innerHTML = `
-                        <section class="eng-version">
-                                <p>ENG</p>
-                        </section>
                         <section class="navigation">
                                 <section>
                                         <a href="index.html">
