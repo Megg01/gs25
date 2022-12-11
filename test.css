@@ -1,0 +1,13 @@
+@import url(css/var.css);
+.clickProduct{
+        background-color: var(--third-color);
+        display: flex;
+}
+.clickProduct-table{
+        border: 0.0625em solid var(--text-fill-color);
+        border-radius: var(--radius-10);
+        display: flex;
+}
+.clickProduct-table:nth-child(0){
+        border-right-color: solid var(--text-fill-color);
+}
