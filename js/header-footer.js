@@ -50,10 +50,9 @@ class footer extends HTMLElement {
                                                 <li><a href="">Бэлэн бүтээгдэхүүн</a></li>
                                                 <li><a href="">Амттан</a></li>
                                                 <li><a href="">Шингэн хүнс</a></li>
-                                                <li><a href="">Сүүн бүтээгдэхүүн</a></li>
-                                                <li><a href="">Өдөр тутмын хүнс</a></li>
                                                 <li><a href="">Ахуйн бараа</a></li>
-                                                <li><a href="">Бэлэгтэй бүтээгдэхүүн</a></li>
+                                                <li><a href="">Түргэн хоолнууд</a></li>
+                                                <li><a href="">Урамшуулалтай бүтээгдэхүүн</a></li>
                                         </ul>
                                 </section>
                                 <section class="footer-address">

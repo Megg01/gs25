@@ -101,9 +101,12 @@ class ProductBonusCardItem{
         render() {
                 return `
                 <div class="product-bonus-card">
-                        <div></div>
-                        <img src="${this.src}" alt="${this.alt}" width="180px" height="180px">
-                        <h4>${this.name}</h4>
+                        <div class="product-bonus-card-img-container">
+                                <img src="${this.src}" alt="${this.alt}" width="180px" height="180px">
+                        </div>
+                        <div class="product-bonus-card-name">
+                                <h4>${this.name}</h4>
+                        </div>
                         <div class="product-bonus-card-price">
                                 <p>${this.price}</p>
                         </div>                
@@ -157,6 +160,6 @@ const ProductBonusCardData =
 ];
 
 window.onload = () =>{
-        App(ProductCardData, "product-cards");
+        // App(ProductCardData, "product-cards");
         AppBonus(ProductBonusCardData, "product-bonus-cards");
 }
