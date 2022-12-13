@@ -160,6 +160,6 @@ const ProductBonusCardData =
 ];
 
 window.onload = () =>{
-        App(ProductCardData, "product-cards");
+        // App(ProductCardData, "product-cards");
         AppBonus(ProductBonusCardData, "product-bonus-cards");
 }

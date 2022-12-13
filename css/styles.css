@@ -102,6 +102,7 @@ body{
 }
 .mySlides{
         display: none;
+        text-align: center;
 }
 .category-cards{
         display: flex;
@@ -192,4 +193,10 @@ body{
         margin: 0;
         bottom: 0.5em;
         left: 1em;
+}
+.instagram-post{
+        margin-top: 5em;
+        margin-bottom: 5em;
+        display: flex;
+        justify-content: center;
 }
