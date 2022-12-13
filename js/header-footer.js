@@ -32,7 +32,7 @@ class footer extends HTMLElement {
                                 <img src="img/gs25-footer.webp" alt="gs25-footer" width="1440px" height="612px">
                                 </picture>
                         </section>
-                        <article>
+                        <article class="footer-all-menu">
                                 <section class="footer-main-menu">
                                 <ul>
                                         <li><h4>ҮНДСЭН ЦЭС</h4></li>
@@ -46,14 +46,13 @@ class footer extends HTMLElement {
                                 <section class="footer-products">
                                         <ul>
                                                 <li><h4>БҮТЭЭГДЭХҮҮН</h4></li>
-                                                <li><a href="">Бүх бүтээгдэхүүн</a></li>
-                                                <li><a href="">Бэлэн бүтээгдэхүүн</a></li>
-                                                <li><a href="">Амттан</a></li>
-                                                <li><a href="">Шингэн хүнс</a></li>
-                                                <li><a href="">Сүүн бүтээгдэхүүн</a></li>
-                                                <li><a href="">Өдөр тутмын хүнс</a></li>
-                                                <li><a href="">Ахуйн бараа</a></li>
-                                                <li><a href="">Бэлэгтэй бүтээгдэхүүн</a></li>
+                                                <li><a href="#">Бүх бүтээгдэхүүн</a></li>
+                                                <li><a href="#">Бэлэн бүтээгдэхүүн</a></li>
+                                                <li><a href="#">Амттан</a></li>
+                                                <li><a href="#">Шингэн хүнс</a></li>
+                                                <li><a href="#">Ахуйн бараа</a></li>
+                                                <li><a href="#">Түргэн хоолнууд</a></li>
+                                                <li><a href="#">Урамшуулалтай бүтээгдэхүүн</a></li>
                                         </ul>
                                 </section>
                                 <section class="footer-address">
@@ -101,13 +100,13 @@ class footer extends HTMLElement {
                                 </section>
                                 <section class="social">
                                         <a href="https://www.facebook.com/gs25mn">
-                                                <img src="./img/facebook-icon.svg" alt="facebook-icon" height="40px" width="40px">
+                                                <img src="img/facebook-icon.svg" alt="fb" width="30px" height="30px">
                                         </a>
                                         <a href="https://www.instagram.com/gs25mn/">
-                                                <img src="./img/instagram-icon.svg" alt="instagram-icon" height="40px" width="40px">
+                                                <img src="img/instagram-icon.svg" alt="fb" width="30px" height="30px">
                                         </a>
                                         <a href="https://www.youtube.com/channel/UCNZRSkhwGeT-NkjDtlj0CHg">
-                                                <img src="./img/youtube-icon.svg" alt="youtube-icon" height="40px" width="40px">
+                                                <img src="img/youtube-icon.svg" alt="fb" width="30px" height="30px">
                                         </a>
                                 </section>
                         </section>
