@@ -134,7 +134,7 @@ const ProductBonusCardData =
                 "price": "7,900₮"
         },
         {
-                "src": "img/product-img/product-bonus-chocopie1.webp",
+                "src": "img/product-img/product-hotdog2.webp",
                 "alt": "chocopie",
                 "name": "Чокопай Crown гүзээлзгэнэтэй",
                 "price": "9,500₮"
@@ -160,6 +160,6 @@ const ProductBonusCardData =
 ];
 
 window.onload = () =>{
-        // App(ProductCardData, "product-cards");
+        App(ProductCardData, "product-cards");
         AppBonus(ProductBonusCardData, "product-bonus-cards");
 }
