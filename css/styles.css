@@ -93,10 +93,9 @@ body{
 }
 
 
-
 /* FOOTER END */
 
-
+/* SLIDER IMAGE START*/
 .slider-img{
         margin: 6em 0 2em 0;
 }
@@ -104,6 +103,10 @@ body{
         display: none;
         text-align: center;
 }
+
+/* SLIDER IMAGE END */
+
+
 .category-cards{
         display: flex;
         flex-direction: row;
@@ -129,13 +132,15 @@ body{
         cursor: pointer;
 }
 
-/* ENGIIN BUTEEGDEHUUN */
+/* PRODUCT NORMAL HOMEPAGE START*/
 
 .product-homepage-continue, .product-bonus-homepage-continue{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
+        margin: auto;
+        justify-content: space-between;
+        max-width: 1150px;
 }
 .product-homepage-continue button, .product-bonus-homepage-continue button{
         border: none;
@@ -146,7 +151,7 @@ body{
 }
 .product-normal-cards-container, .product-bonus-cards-container{
         width: 100%;
-        display: flex;
+        display: flex; 
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -156,12 +161,10 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        /* align-items: center; */
-        max-width: 1100px;
+        align-items: center;
+        max-width: 1200px;
         overflow: hidden;
-	/* margin: 0 auto; */
-	background-color: var(--third-color);
-	/* box-shadow: inset 0 0 6px rgba(0, 0, 0, .1); */
+	margin: 0 auto;
 }
 .product-card, .product-bonus-card{
         border: 0.0625em solid var(--text-fill-color);
@@ -169,7 +172,8 @@ body{
         padding: 1em 0.5em 0em 0.5em;
         margin: 1em;
         transition: 0.3s;
-        max-width: 220px;
+        overflow: hidden;
+        max-width: 250px;
         position: relative;
 }
 .product-card:hover, .product-bonus-card:hover{
@@ -180,9 +184,7 @@ body{
         cursor: pointer;
 }
 .product-card-img-container, .product-bonus-card-img-container{
-        display: flex;
-        position: relative;
-        align-items: center;
+        text-align: center;
 }
 .product-card-name, .product-bonus-card-name {
         margin: 0.5em 0 0 0;
@@ -194,9 +196,55 @@ body{
         bottom: 0.5em;
         left: 1em;
 }
+.owl-nav .owl-prev, .owl-nav .owl-next{
+        text-align: center;
+        position: absolute;
+        top: 40%;
+}
+.owl-nav .owl-prev{
+        left: -15px;
+}
+.owl-nav .owl-next{
+        right: -15px;
+}
+/* PRODUCT NORMAL HOMEPAGE END*/
+
+
 .instagram-post{
         margin-top: 5em;
         margin-bottom: 5em;
         display: flex;
         justify-content: center;
 }
+
+
+
+
+/* LOCATION START */
+main{
+        display: grid;
+}
+
+.location-search{
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin: 7em 1em 0 1em;
+        
+}
+.location-search{
+        height: 40px;
+}
+.location-search input{
+        
+}
+.location-map{
+        grid-column-start: 2;
+        grid-column-end: 4;
+}
+.googleMap{
+        width: 800px;
+        height: 400px;
+}
+
+/* LOCATION END */
