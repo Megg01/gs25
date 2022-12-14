@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"> -->
+        
+        <style>
+                .product-card{
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                        max-width: 200px;
+                        margin: 1em;
+                        padding: 5px;
+                        text-align: left;
+                        font-family: arial;
+                        border: 0.0625em solid #3D4849;
+                        border-radius: 1px;
+                        background-color: #D9EBF8;
+                        transition: 0.3s;
+                }
+                .product-card-price{
+                        display: none;
+                }
+                .product-card-img-container{
+                        border: 0.0625em solid #3D4849;
+                        background-color: white;
+                        border-radius: 10px;
+                        text-align: center;
+                }
+                .product-card:hover{
+                        border-color: var(--second-color);
+                        color: black;
+                        box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
+                        cursor: pointer;
+                }
+                .product-card:hover .product-card-price{
+                        display: block;
+                }
+        </style>
+</head>
+<body>
+        <div class="product-card">
+                <div class="product-card-img-container">
+                        <img src="img/product-img/product-hotdog1.webp" alt="hotdog" width="180px" height="180px">
+                </div>
+                <div class="back">
+                <div class="product-card-name">
+                        <h4>Франкфурт хотдог / бяслагтай /</h4>
+                </div>
+                <div class="product-card-price">
+                        <p>3,000₮</p>
+                </div>
+                </div>
+        </div>
+        <div class="product-card">
+                <div class="product-card-img-container">
+                        <img src="img/product-img/product-chicken1.webp" alt="chicken" width="180px" height="180px">
+                </div>
+                <div class="back">
+                <div class="product-card-name">
+                        <h4>Chicken25 /org/ box</h4>
+                </div>
+                <div class="product-card-price">
+                        <p>22,000₮</p>
+                </div>
+                </div>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+                $(function() {
+                // Owl Carousel
+                        var owl = $(".owl-carousel");
+                        owl.owlCarousel({
+                        items: 3,
+                        margin: 10,
+                        loop: true,
+                        nav: true
+                        });
+                });
+
+        </script>
+</body>
+</html>
