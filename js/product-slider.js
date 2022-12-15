@@ -1,23 +1,15 @@
-$(function () {
-        // Owl Carousel
-        var owl = $(".owl-carousel");
-        owl.owlCarousel({
-                items: 5,
-                margin: 10,
-                autoplay:true,
-                loop: true,
-                nav: true,
-                navText: [$('.product-card-left'),$('.product-card-right')],
-                responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 3
-                        },
-                        1000: {
-                            items: 5
-                        }
-                }
+document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".own-carousel__container").ownCarousel({
+        itemPerRow: 5,
+        itemWidth: 20,
+        
+        nav: true,
+        responsive: {
+                1000: [4, 24],
+                800: [3, 33],
+                600: [2, 49],
+                400: [1, 100],
+        },
         });
+        responsive();
 });
