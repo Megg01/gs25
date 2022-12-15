@@ -7,14 +7,17 @@ class header extends HTMLElement {
                                                 <img src="./img/gs25-logo.webp" alt="GS25 Logo" width="130px" height="41.119px">
                                         </a>
                                 </section>
-                                <nav class="navigation-menu">
-                                        <ul>
+                                <nav class="navigation-menu" id="myTopnav">
+                                        <ul class="navigation-list" id="nav-list">
                                                 <li class="nav-item"><a href="index.html">Нүүр хуудас</a></li>
                                                 <li class="nav-item"><a href="product.html">Бүтээгдэхүүн</a></li>
                                                 <li class="nav-item"><a href="location.html">Байршил</a></li>
                                                 <li class="nav-item"><a href="hr.html">Хүний нөөц</a></li>
-                                                <li class="nav-item"><a href="about.html">Бидний тухай</a></li>
+                                                <li class="nav-item"><a href="about.html">Бидний тухай</a></li>                                             
                                         </ul>
+                                        <div class="nav-mobile" onclick="myFunction()">
+                                                <img src="./img/nav-mobile.webp" alt="nav-mobile" width="30px" height="30px">
+                                        </div>
                                 </nav>
                         </section>
                 `

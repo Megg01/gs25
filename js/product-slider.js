@@ -1,15 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-        document.querySelector(".own-carousel__container").ownCarousel({
-        itemPerRow: 5,
-        itemWidth: 20,
-        
-        nav: true,
-        responsive: {
-                1000: [4, 24],
-                800: [3, 33],
-                600: [2, 49],
-                400: [1, 100],
-        },
-        });
-        responsive();
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  slidesPerGroup: 5,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
