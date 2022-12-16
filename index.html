@@ -33,20 +33,29 @@
                 <gs25-header></gs25-header>
         </header>
         <main>
-                <div class="slider-img">
-                        <div class="slideshow-container">
-                                <div class="mySlides fade">
-                                        <img src="img/gs25-slide2 (1).webp" alt="gs25-slide" width="1440px" height="550px">
-                                </div>
-                                <div class="mySlides fade">
-                                        <img src="img/gs25-slide4 (1).webp" alt="gs25-slide" width="1440px" height="550px">
-                                </div>
-
-                                <div class="mySlides fade">
-                                        <img src="img/gs25-slide3.webp" alt="gs25-slide" width="1440px" height="550px">
-                                </div>
+                <section class="slider-img">
+                        <div class="mySlides fade">
+                                <picture>
+                                        <source media="(min-width:1200px)" srcset="img/gs25-slide2.webp">
+                                        <source media="(min-width:720px)" srcset="img/gs25-slide2.webp">
+                                        <img src="img/gs25-slide2.webp" alt="gs25-slide" width="100%">
+                                </picture>
                         </div>
-                </div>
+                        <div class="mySlides fade">
+                                <picture>
+                                        <source media="(min-width:1200px)" srcset="img/gs25-slide4.webp">
+                                        <source media="(min-width:720px)" srcset="img/gs25-slide4.webp">
+                                        <img src="img/gs25-slide4.webp" alt="gs25-slide" width="100%">
+                                </picture>
+                        </div>
+                        <div class="mySlides fade">
+                                <picture>
+                                        <source media="(min-width:1200px)" srcset="img/gs25-slide3.webp">
+                                        <source media="(min-width:720px)" srcset="img/gs25-slide3.webp">
+                                        <img src="img/gs25-slide3.webp" alt="gs25-slide" width="100%">
+                                </picture>
+                        </div>
+                </section>
                 <section class="category-cards">
                         <div>
                                 <img src="img/category-icon/cat-hotdog-icon.svg" alt="hotdog-icon" width="70px"
@@ -271,14 +280,20 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/product-slider.js"></script>
 <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "navigation-menu") {
-    x.className += " responsive";
-  } else {
-    x.className = "navigation-menu";
-  }
-}
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener('click', () => {
+                //Animate Links
+                navLinks.classList.toggle("open");
+                links.forEach(link => {
+                        link.classList.toggle("fade");
+                });
+
+                //Hamburger Animation
+                hamburger.classList.toggle("toggle");
+        });
 </script>
 
 </html>

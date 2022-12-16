@@ -1,25 +1,25 @@
 class header extends HTMLElement {
         connectedCallback() {
                 this.parentNode.innerHTML = `
-                        <section class="navigation">
+                        <nav class="navigation-menu">
                                 <section>
                                         <a href="index.html">
-                                                <img src="./img/gs25-logo.webp" alt="GS25 Logo" width="130px" height="41.119px">
+                                                <img src="./img/gs25-logo.webp" alt="GS25 Logo" width="140px" height="44.282px">
                                         </a>
                                 </section>
-                                <nav class="navigation-menu" id="myTopnav">
-                                        <ul class="navigation-list" id="nav-list">
-                                                <li class="nav-item"><a href="index.html">Нүүр хуудас</a></li>
-                                                <li class="nav-item"><a href="product.html">Бүтээгдэхүүн</a></li>
-                                                <li class="nav-item"><a href="location.html">Байршил</a></li>
-                                                <li class="nav-item"><a href="hr.html">Хүний нөөц</a></li>
-                                                <li class="nav-item"><a href="about.html">Бидний тухай</a></li>                                             
-                                        </ul>
-                                        <div class="nav-mobile" onclick="myFunction()">
-                                                <img src="./img/nav-mobile.webp" alt="nav-mobile" width="30px" height="30px">
-                                        </div>
-                                </nav>
-                        </section>
+                                <ul class="nav-links">
+                                        <li class="nav-item"><a href="index.html">Нүүр хуудас</a></li>
+                                        <li class="nav-item"><a href="product.html">Бүтээгдэхүүн</a></li>
+                                        <li class="nav-item"><a href="location.html">Байршил</a></li>
+                                        <li class="nav-item"><a href="hr.html">Хүний нөөц</a></li>
+                                        <li class="nav-item"><a href="about.html">Бидний тухай</a></li>                                             
+                                </ul>
+                                <div class="hamburger">
+                                        <div class="line1"></div>
+                                        <div class="line2"></div>
+                                        <div class="line3"></div>
+                                </div>
+                        </nav>
                 `
         }
 }
@@ -32,11 +32,13 @@ class footer extends HTMLElement {
                 <section class="footer">
                         <section class="footer-logo">
                                 <picture>
-                                <img src="img/gs25-footer.webp" alt="gs25-footer" width="1440px" height="612px">
+                                        <source media="(min-width:1200px)" srcset="img/gs25-footer.png">
+                                        <source media="(min-width:720px)" srcset="img/gs25-footer.png">
+                                        <img src="img/gs25-footer.png" alt="gs25-footer" width="100%" height="auto">
                                 </picture>
                         </section>
                         <article class="footer-all-menu">
-                                <section class="footer-main-menu">
+                                <section class="footer-main-menu footer-col">
                                 <ul>
                                         <li><h4>ҮНДСЭН ЦЭС</h4></li>
                                         <li><a href="#">Нүүр хуудас</a></li>
@@ -46,7 +48,7 @@ class footer extends HTMLElement {
                                         <li><a href="about.html">Бидний тухай</a></li>
                                 </ul>
                                 </section>
-                                <section class="footer-products">
+                                <section class="footer-products footer-col">
                                         <ul>
                                                 <li><h4>БҮТЭЭГДЭХҮҮН</h4></li>
                                                 <li><a href="#">Бүх бүтээгдэхүүн</a></li>
@@ -58,7 +60,7 @@ class footer extends HTMLElement {
                                                 <li><a href="#">Урамшуулалтай бүтээгдэхүүн</a></li>
                                         </ul>
                                 </section>
-                                <section class="footer-address">
+                                <section class="footer-address footer-col">
                                         <ul>
                                                 <li><h4>ХАЯГ</h4></li>
                                                 <li>GS25 Mongolia Distribution Center<br>18-р хороо, Хан-Уул дүүрэг</li>
@@ -74,7 +76,7 @@ class footer extends HTMLElement {
                                                 </li>
                                         </ul>
                                 </section>
-                                <section class="footer-contact">
+                                <section class="footer-contact footer-col">
                                         <h4>ХОЛБОГДОХ</h4>
                                         <form action="" method="get">
                                                 <label for="feedback_type">Төрөл</label>
@@ -114,8 +116,7 @@ class footer extends HTMLElement {
                                 </section>
                         </section>
                         <section class="copyright">
-                                <span>&copy;</span>
-                                <p>Created By Mega 2022</p>
+                                <p>&copyCreated By GS25</p>
                         </section>
                 </section>
                 `
