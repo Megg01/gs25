@@ -80,14 +80,14 @@ class footer extends HTMLElement {
                                                 </a>
                                         </section>
                                         <section class="social">
-                                                <a href="https://www.facebook.com/gs25mn">
-                                                        <img src="img/facebook-icon.svg" alt="fb" width="50px" height="50px">
+                                                <a href="https://www.facebook.com/gs25mn" arial-label="Facebook">
+                                                        <i class="fab fa-facebook-f icon"></i>
                                                 </a>
-                                                <a href="https://www.instagram.com/gs25mn/">
-                                                        <img src="img/instagram-icon.svg" alt="fb" width="50px" height="50px">
+                                                <a href="https://www.instagram.com/gs25mn/" arial-label="Instagram">
+                                                        <i class="fab fa-instagram icon"></i>
                                                 </a>
-                                                <a href="https://www.youtube.com/channel/UCNZRSkhwGeT-NkjDtlj0CHg">
-                                                        <img src="img/youtube-icon.svg" alt="fb" width="50px" height="50px">
+                                                <a href="https://www.youtube.com/channel/UCNZRSkhwGeT-NkjDtlj0CHg" arial-label="Youtube">
+                                                        <i class="fab fa-youtube icon"></i>
                                                 </a>
                                         </section>
                                 </section>
