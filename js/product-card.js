@@ -7,10 +7,8 @@ class ProductCardItem{
         }
         render1() {
                 return `
-                <div class="product-card">
-                        <div class="product-card-img-container">
-                                <img src="${this.src}" alt="${this.alt}" width="180px" height="180px">
-                        </div>
+                <div class="product-card swiper-slide">
+                        <div class="product-card-img-container"  style="background-image: url('${this.src}');"></div>
                         <div class="product-card-name">
                                 <h4>${this.name}</h4>
                         </div>
@@ -36,13 +34,13 @@ const ProductCardData =
         {
                 "src": "img/product-img/product-hotdog1.webp",
                 "alt": "hotdog",
-                "name": "Франкфурт хотдог / бяслагтай /",
+                "name": "Франкфурт хотдог",
                 "price": "3,000₮"
         },
         {
                 "src": "img/product-img/product-hotdog2.webp",
                 "alt": "hotdog",
-                "name": "Тахиан махан хотдог / бяслагтай /",
+                "name": "Тахиан махан хотдог",
                 "price": "3,000₮"
         },
         {
@@ -100,10 +98,8 @@ class ProductBonusCardItem{
         }
         render() {
                 return `
-                <div class="product-bonus-card">
-                        <div class="product-bonus-card-img-container">
-                                <img src="${this.src}" alt="${this.alt}" width="180px" height="180px">
-                        </div>
+                <div class="product-bonus-card swiper-slide">
+                        <div class="product-bonus-card-img-container"  style="background-image: url('${this.src}');"></div>
                         <div class="product-bonus-card-name">
                                 <h4>${this.name}</h4>
                         </div>
@@ -134,10 +130,10 @@ const ProductBonusCardData =
                 "price": "7,900₮"
         },
         {
-                "src": "img/product-img/product-hotdog2.webp",
-                "alt": "chocopie",
-                "name": "Чокопай Crown гүзээлзгэнэтэй",
-                "price": "9,500₮"
+                "src": "img/product-img/product-bonus-fishka1.webp",
+                "alt": "fishka",
+                "name": "Самар Fishka давсалсан 50гр",
+                "price": "1,800₮"
         },
         {
                 "src": "img/product-img/product-bonus-drink1.webp",
@@ -156,10 +152,28 @@ const ProductBonusCardData =
                 "alt": "honey",
                 "name": "Халбага зөгийн бал 10Гр",
                 "price": "1,600₮"
+        },
+        {
+                "src": "img/product-img/product-bonus-belengoimon1.webp",
+                "alt": "noodle",
+                "name": "Бэлэн гоймон Chow mein 110г",
+                "price": "5,100₮"
+        },
+        {
+                "src": "img/product-img/product-bonus-suu1.webp",
+                "alt": "milk",
+                "name": "Сүү Вайб Улаан хүч 180 гр",
+                "price": "1,700₮"
+        },
+        {
+                "src": "img/product-img/product-bonus-suu2.webp",
+                "alt": "milk",
+                "name": "Сүү Вайб Кафе латте 180 гр",
+                "price": "1,700₮"
         }
 ];
 
 window.onload = () =>{
-        // App(ProductCardData, "product-cards");
-        AppBonus(ProductBonusCardData, "product-bonus-cards");
+        App(ProductCardData, "normal-swiper");
+        AppBonus(ProductBonusCardData, "bonus-swiper");
 }

@@ -21,7 +21,7 @@
         <meta property="og:image"
                 content="https://gs25.mn/cache/images/5/7/2/b/7/572b7fc7db56f78c09ebed5e868982fe595414a6.jpg">
 
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css">
         <link rel="stylesheet" href="./css/styles.css">
         <title>GS25 Mongolia</title>
         <style>
@@ -34,33 +34,14 @@
         </header>
         <main>
                 <section class="slider-img">
-                        <div class="mySlides slide1">
-                                <picture>
-                                        <source media="(min-width:1200px)" srcset="img/gs25-slide2.webp">
-                                        <source media="(min-width:800px)" srcset="img/gs25-slide2.webp">
-                                        <img src="img/gs25-slide2.webp" alt="gs25-slide" width="100%" height="auto">
-                                </picture>
-                        </div>
-                        <div class="mySlides slide1">
-                                <picture>
-                                        <source media="(min-width:1200px)" srcset="img/gs25-slide4.webp">
-                                        <source media="(min-width:800px)" srcset="img/gs25-slide4.webp">
-                                        <img src="img/gs25-slide4.webp" alt="gs25-slide" width="100%">
-                                </picture>
-                        </div>
-                        <div class="mySlides slide1">
-                                <picture>
-                                        <source media="(min-width:1200px)" srcset="img/gs25-slide3.webp">
-                                        <source media="(min-width:720px)" srcset="img/gs25-slide3.webp">
-                                        <img src="img/gs25-slide3.webp" alt="gs25-slide" width="100%">
-                                </picture>
-                        </div>
+                        <div class="mySlides slide1" style="background-image: url('./img/gs25-slide2.webp');"></div>
+                        <div class="mySlides slide1" style="background-image: url('./img/gs25-slide4.webp');"></div>
+                        <div class="mySlides slide1" style="background-image: url('./img/gs25-slide3.webp');"></div>
                 </section>
                 <section class="category-cards">
                         <a href="#">
                                 <div class="cat-card">
-                                        <img src="img/category-icon/cat-hotdog-icon.svg" alt="hotdog-icon" width="70px"
-                                                height="70px">
+                                        <div class="cat-card-img" style="background-image: url('./img/category-icon/cat-hotdog-icon.svg');"></div>
                                         <div>
                                                 <h4>Бэлэн бүтээгдэхүүн</h4>
                                         </div>
@@ -68,8 +49,7 @@
                         </a>
                         <a href="#">
                                 <div class="cat-card">
-                                        <img src="img/category-icon/cat-snack-icon.svg" alt="snack-icon" width="70px"
-                                                height="70px">
+                                        <div class="cat-card-img" style="background-image: url('./img/category-icon/cat-snack-icon.svg');"></div>
                                         <div>
                                                 <h4>Амттан</h4>
                                         </div>
@@ -77,8 +57,7 @@
                         </a>
                         <a href="#">
                                 <div class="cat-card">
-                                        <img src="img/category-icon/cat-drink-icon.svg" alt="drink-icon" width="70px"
-                                                height="70px">
+                                        <div class="cat-card-img" style="background-image: url('./img/category-icon/cat-drink-icon.svg');"></div>
                                         <div>
                                                 <h4>Шингэн хүнс</h4>
                                         </div>
@@ -86,8 +65,7 @@
                         </a>
                         <a href="#">
                                 <div class="cat-card">
-                                        <img src="img/category-icon/cat-fast-food.svg" alt="milk-icon" width="70px"
-                                                height="70px">
+                                        <div class="cat-card-img" style="background-image: url('./img/category-icon/cat-fast-food.svg');"></div>
                                         <div>
                                                 <h4>Түргэн хоол</h4>
                                         </div>
@@ -95,8 +73,7 @@
                         </a>
                         <a href="#">
                                 <div class="cat-card">
-                                        <img src="img/category-icon/cat-tissue-icon.svg" alt="tissue-icon" width="70px"
-                                                height="70px">
+                                        <div class="cat-card-img" style="background-image: url('./img/category-icon/cat-tissue-icon.svg');"></div>
                                         <div>
                                                 <h4>Ахуйн бараа</h4>
                                         </div>
@@ -104,8 +81,7 @@
                         </a>
                         <a href="#">
                                 <div class="cat-card">
-                                        <img src="img/category-icon/cat-bread-icon.svg" alt="bread-icon" width="70px"
-                                                height="70px">
+                                        <div class="cat-card-img" style="background-image: url('./img/category-icon/cat-gift-icon.svg');"></div>
                                         <div>
                                                 <h4>Урамшуулалтай</h4>
                                         </div>
@@ -113,169 +89,34 @@
                         </a>
                 </section>
                 <section>
-                        <section>
+                        <section class="all-normal-product">
                                 <section class="product-homepage-continue">
                                         <h4>БҮТЭЭГДЭХҮҮН</h4>
-                                        <button>Цааш үзэх</button>
+                                        <a href="product.html"><p class="more">Цааш үзэх</p><p class="mobile-more">+</p></a>
                                 </section>
-                                <section class="product-normal-cards-container allSwiper">
+                                <section class="product-normal-cards-container allNormalSwiper">
                                         <div class="product-cards swiper mySwiper">
-                                                <div class="swiper-wrapper">
-                                                        <div class="product-card swiper-slide">
-                                                                <div class="product-card-img-container">
-                                                                        <img src="img/product-img/product-hotdog1.webp"
-                                                                                alt="hotdog" width="180px"
-                                                                                height="180px">
-                                                                </div>
-                                                                <div class="product-card-name">
-                                                                        <h4>Франкфурт хотдог / бяслагтай /</h4>
-                                                                </div>
-                                                                <div class="product-card-price">
-                                                                        <p>3,000₮</p>
-                                                                </div>
-                                                        </div>
-                                                        <div class="product-card swiper-slide">
-                                                                <div class="product-card-img-container">
-                                                                        <img src="img/product-img/product-hotdog2.webp"
-                                                                                alt="hotdog" width="180px"
-                                                                                height="180px">
-                                                                </div>
-                                                                <div class="product-card-name">
-                                                                        <h4>Тахиан махан хотдог / бяслагтай /</h4>
-                                                                </div>
-                                                                <div class="product-card-price">
-                                                                        <p>3,000₮</p>
-                                                                </div>
-                                                        </div>
-                                                        <div class="product-card swiper-slide">
-                                                                <div class="product-card-img-container">
-                                                                        <img src="img/product-img/product-chicken1.webp"
-                                                                                alt="chicken" width="180px"
-                                                                                height="180px">
-                                                                </div>
-                                                                <div class="product-card-name">
-                                                                        <h4>Chicken25 /org/ box</h4>
-                                                                </div>
-                                                                <div class="product-card-price">
-                                                                        <p>22,000₮</p>
-                                                                </div>
-                                                        </div>
-                                                        <div class="product-card swiper-slide">
-                                                                <div class="product-card-img-container">
-                                                                        <img src="img/product-img/product-chicken2.webp"
-                                                                                alt="chicken" width="180px"
-                                                                                height="180px">
-                                                                </div>
-                                                                <div class="product-card-name">
-                                                                        <h4>Chicken25 MIX box</h4>
-                                                                </div>
-                                                                <div class="product-card-price">
-                                                                        <p>22,000₮</p>
-                                                                </div>
-                                                        </div>
-                                                        <div class="product-card swiper-slide">
-                                                                <div class="product-card-img-container">
-                                                                        <img src="img/product-img/product-chicken3.webp"
-                                                                                alt="chicken" width="180px"
-                                                                                height="180px">
-                                                                </div>
-                                                                <div class="product-card-name">
-                                                                        <h4>Chicken25 /sauce/</h4>
-                                                                </div>
-                                                                <div class="product-card-price">
-                                                                        <p>4,900₮</p>
-                                                                </div>
-                                                        </div>
-                                                        <div class="product-card swiper-slide">
-                                                                <div class="product-card-img-container">
-                                                                        <img src="img/product-img/product-pepsi1.webp"
-                                                                                alt="pepsi" width="180px"
-                                                                                height="180px">
-                                                                </div>
-                                                                <div class="product-card-name">
-                                                                        <h4>Pepsi аягатай</h4>
-                                                                </div>
-                                                                <div class="product-card-price">
-                                                                        <p>1,600₮</p>
-                                                                </div>
-                                                        </div>
-                                                        <div class="product-card swiper-slide">
-                                                                <div class="product-card-img-container">
-                                                                        <img src="img/product-img/product-coffee1.webp"
-                                                                                alt="coffee" width="180px"
-                                                                                height="180px">
-                                                                </div>
-                                                                <div class="product-card-name">
-                                                                        <h4>Кафе25 Aмерикано</h4>
-                                                                </div>
-                                                                <div class="product-card-price">
-                                                                        <p>3,500₮</p>
-                                                                </div>
-                                                        </div>
-                                                        <div class="product-card swiper-slide">
-                                                                <div class="product-card-img-container">
-                                                                        <img src="img/product-img/product-mantuunbuuz1.webp"
-                                                                                alt="mantuu" width="180px"
-                                                                                height="180px">
-                                                                </div>
-                                                                <div class="product-card-name">
-                                                                        <h4>Мантуун бууз / кимчи /</h4>
-                                                                </div>
-                                                                <div class="product-card-price">
-                                                                        <p>1,800₮</p>
-                                                                </div>
-                                                        </div>
-                                                        <div class="product-card swiper-slide">
-                                                                <div class="product-card-img-container">
-                                                                        <img src="img/product-img/product-boortsog.webp"
-                                                                                alt="mantuu" width="180px"
-                                                                                height="180px">
-                                                                </div>
-                                                                <div class="product-card-name">
-                                                                        <h4>Боорцог / мушгиа /</h4>
-                                                                </div>
-                                                                <div class="product-card-price">
-                                                                        <p>1,000₮</p>
-                                                                </div>
-                                                        </div>
-                                                        <div class="product-card swiper-slide">
-                                                                <div class="product-card-img-container">
-                                                                        <img src="img/product-img/product-boortsog.webp"
-                                                                                alt="mantuu" width="180px"
-                                                                                height="180px">
-                                                                </div>
-                                                                <div class="product-card-name">
-                                                                        <h4>Боорцог / мушгиа /</h4>
-                                                                </div>
-                                                                <div class="product-card-price">
-                                                                        <p>1,000₮</p>
-                                                                </div>
-                                                        </div>
+                                                <div class="normal-swiper swiper-wrapper">
+                                                        <!-- Engiin buteegdehuunuud orj irne -->
                                                 </div>
                                         </div>
-                                        <div class="product-card-left swiper-button-prev">
-                                                <!-- <img src="img/arrow.svg" alt="button" width="40px" height="40px"> -->
-                                        </div>
-                                        <div class="product-card-right swiper-button-next">
-                                                <!-- <img src="img/arrow1.svg" alt="button" width="40px" height="40px"> -->
-                                        </div>
+                                        <div class="product-card-left swiper-button-prev"></div>
+                                        <div class="product-card-right swiper-button-next"></div>
                                 </section>
                         </section>
-                        <section>
+                        <section class="all-bonus-product">
                                 <section class="product-bonus-homepage-continue">
                                         <h4>БЭЛЭГТЭЙ, УРАМШУУЛАЛТАЙ БҮТЭЭГДЭХҮҮН</h4>
-                                        <button>Цааш үзэх</button>
+                                        <a href="product.html"><p class="bonus-more">Цааш үзэх</p><p class="bonus-mobile-more">+</p></a>
                                 </section>
-                                <section class="product-bonus-cards-container">
-                                        <div class="product-bonus-card-left">
-                                                <img src="img/arrow.svg" alt="button" width="40px" height="40px">
+                                <section class="product-bonus-cards-container allBonusSwiper">
+                                        <div class="product-bonus-cards swiper mySwiper">
+                                                <div class="bonus-swiper swiper-wrapper">
+                                                        <!-- Belegtei buteegdehuunuud orj irne -->
+                                                </div>
                                         </div>
-                                        <section class="product-bonus-cards">
-
-                                        </section>
-                                        <div class="product-bonus-card-left">
-                                                <img src="img/arrow1.svg" alt="button" width="40px" height="40px">
-                                        </div>
+                                        <div class="product-bonus-card-left swiper-button-prev"></div>
+                                        <div class="product-bonus-card-right swiper-button-next"></div>
                                 </section>
                         </section>
                         <section class="instagram-post">
@@ -289,23 +130,8 @@
 <script src="js/header-footer.js"></script>
 <script src="js/product-card.js"></script>
 <script src="js/slideshow.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"></script>
 <script src="js/product-slider.js"></script>
-<script>
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-links");
-        const links = document.querySelectorAll(".nav-links li");
-
-        hamburger.addEventListener('click', () => {
-                //Animate Links
-                navLinks.classList.toggle("open");
-                links.forEach(link => {
-                        link.classList.toggle("fade");
-                });
-
-                //Hamburger Animation
-                hamburger.classList.toggle("toggle");
-        });
-</script>
+<script src="js/mobilemenu.js"></script>
 
 </html>
