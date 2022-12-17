@@ -2,7 +2,7 @@ class header extends HTMLElement {
         connectedCallback() {
                 this.parentNode.innerHTML = `
                         <nav class="navigation-menu">
-                                <section>
+                                <section class="header-logo">
                                         <a href="index.html">
                                                 <img src="./img/gs25-logo.webp" alt="GS25 Logo" width="140px" height="44.282px">
                                         </a>
@@ -29,7 +29,6 @@ customElements.define("gs25-header", header);
 class footer extends HTMLElement {
         connectedCallback() {
                 this.parentNode.innerHTML = `
-                <section class="footer">
                         <section class="footer-logo">
                                 <picture>
                                         <source media="(min-width:1200px)" srcset="img/gs25-footer.png">
@@ -118,7 +117,6 @@ class footer extends HTMLElement {
                         <section class="copyright">
                                 <p>&copyCreated By GS25</p>
                         </section>
-                </section>
                 `
         }
 }
