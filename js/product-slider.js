@@ -1,11 +1,15 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".product-cards", {
+        speed:1000,
         slidesPerView: 5,
         spaceBetween: 20,
         slidesPerGroup: 2,
-        loop: true,
+        autoplay: {
+                delay: 2000,
+        },
+        rewind: true,
         navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".product-card-right",
+                prevEl: ".product-card-left",
         },
         breakpoints: {
                 0: {
@@ -16,7 +20,39 @@ var swiper = new Swiper(".mySwiper", {
                         slidesPerView: 3,
                         spaceBetween: 20,
                 },
-                600: {
+                767: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                },
+                1120: {
+                        slidesPerView: 5,
+                        spaceBetween: 20,
+                },
+        },
+});
+var swiper = new Swiper(".product-bonus-cards", {
+        speed:1000,
+        slidesPerView: 5,
+        spaceBetween: 20,
+        slidesPerGroup: 2,
+        autoplay: {
+                delay: 2000,
+        },
+        rewind: true,
+        navigation: {
+                nextEl: ".product-bonus-card-right",
+                prevEl: ".product-bonus-card-left",
+        },
+        breakpoints: {
+                0: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                },
+                450: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                },
+                767: {
                         slidesPerView: 4,
                         spaceBetween: 20,
                 },
