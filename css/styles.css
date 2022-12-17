@@ -5,9 +5,12 @@ body {
         font-family: var(--main-font);
         margin: 0;
         color: var(--text-fill-color);
+        width: 100%;
 }
 
 *{
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
 }
 
@@ -46,10 +49,10 @@ body {
 
 /*Styling Hamburger Icon*/
 .hamburger div {
-        width: 30px;
-        height: 4px;
+        width: 1.875em;
+        height: 0.25em;
         background: var(--text-fill-color);
-        margin: 5px;
+        margin: 0.3125em;
         transition: all 0.3s ease;
 }
 
@@ -111,12 +114,12 @@ body {
 }
 
 /* FOOTER START */
-.footer {
+footer {
         display: flex;
         flex-flow: row wrap;
         flex-direction: column;
 }
-.footer {
+footer {
         background-color: var(--third-color);
 }
 
@@ -179,7 +182,9 @@ body {
 /* FOOTER END */
 
 main {
-        margin: 7em 0 0 0;
+        display: flex;
+        flex-direction: column;
+        margin: 5.25em 0 0 0;
 }
 
 /* SLIDER IMAGE START*/
@@ -191,6 +196,15 @@ main {
         display: none;
         text-align: center;
 }
+.mySlides img{
+        height: auto;
+}
+/* .slide1{
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: auto;
+} */
 
 /* SLIDER IMAGE END */
 
@@ -199,28 +213,34 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
 }
-
-.category-cards>div {
+.category-cards .cat-card {
         border: 0.0625em solid var(--text-fill-color);
         border-radius: var(--radius-10);
         padding: 1em 0.5em 0em 0.5em;
         margin: 1em;
         transition: 0.3s;
         width: 8.5em;
-        height: 8.5em;
+        height: 12em;
         text-align: center;
 }
-
-.category-cards>div>img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+.category-cards .cat-card img {
+        width: 100%;
+        padding: 0.75em;
+        height: auto;
 }
-
-.category-cards>div:hover {
+.category-cards h4 {
+        padding-bottom: 1em;
+        width: 100%;
+}
+.category-cards .cat-card:hover {
         box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
         cursor: pointer;
+}
+.category-cards a{
+        text-decoration: none;
+        color: var(--text-fill-color);
 }
 
 /* PRODUCT NORMAL HOMEPAGE START*/
@@ -232,7 +252,7 @@ main {
         align-items: center;
         margin: auto;
         justify-content: space-between;
-        max-width: 1150px;
+        max-width: 71.875em;
 }
 
 .product-homepage-continue button,
@@ -259,7 +279,7 @@ main {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        max-width: 1100px;
+        max-width: 68.75em;
         overflow: hidden;
         margin: 0 auto;
 }
@@ -274,6 +294,7 @@ main {
         overflow: hidden;
         max-width: 250px;
         position: relative;
+        pointer-events:visible;
 }
 
 .product-card:hover,
@@ -288,7 +309,7 @@ main {
 .product-card-img-container,
 .product-bonus-card-img-container {
         text-align: center;
-        max-width: 180px;
+        max-width: 11.25em;
 }
 
 .product-card-name,
@@ -318,12 +339,14 @@ main {
 }
 
 .allSwiper .swiper-button-prev {
-        left: 80px;
+        left: 5em;
 }
 
 .allSwiper .swiper-button-next {
-        right: 80px;
+        right: 5em;
 }
+
+
 
 /* PRODUCT NORMAL HOMEPAGE END*/
 
@@ -339,9 +362,6 @@ main {
 
 
 /* LOCATION START */
-main {
-        display: grid;
-}
 
 .location-search {
         display: flex;
@@ -352,7 +372,7 @@ main {
 }
 
 .location-search {
-        height: 40px;
+        height: 2.5em;
 }
 
 .location-search input {}
@@ -363,16 +383,31 @@ main {
 }
 
 .googleMap {
-        width: 800px;
-        height: 400px;
+        width: 50em;
+        height: 25em;
 }
 
 /* LOCATION END */
 
 
 
-@media (max-width: 767.98px){
-        *{
+@media (max-width: 600px){
+        .header-logo img{
+                width: 5em;
+                height: auto;
+        }
+        .category-cards div{
+                width: 5em;
+        }
+        .category-cards h4{
+                font-size: 0.75em;
+        }
+        .allSwiper .swiper-button-prev,
+        .allSwiper .swiper-button-next {
+                display: none;
+        }
+        .product-normal-cards-container, .product-normal-cards-container
+        .product-card, .product-bonus-card{
                 
         }
 }
