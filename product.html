@@ -19,7 +19,6 @@
     <meta property="og:description" content="“GS Retail” нь БНСУ-д томоохонд тооцогдох “GS group”-ийн жижиглэн худалдаа, гоо сайхан, гэр ахуйн барааны үйлдвэрлэлийн салбар компани юм.  " />
     <meta property="og:image" content="https://gs25.mn/cache/images/5/7/2/b/7/572b7fc7db56f78c09ebed5e868982fe595414a6.jpg" />
 
-    <link rel="stylesheet" href="./css/styles.css" />
     <title>Бүтээгдэхүүн</title>
 </head>
 
@@ -28,7 +27,7 @@
         <gs25-header></gs25-header>
     </header>
     <main>
-        <div>
+        <section>
             <div>
                 <h3>УРАМШУУЛАЛ</h3>
             </div>
@@ -40,17 +39,17 @@
                     <li>Бэлэгтэй</li>
                 </ul>
             </div>
-        </div>
+        </section>
         <section>
             <div class="search-container">
                 <form action="/action_page.php">
                     <input type="text" placeholder="Search.." name="search" />
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <button type="submit">Search</button>
                 </form>
             </div>
             <div>
                 <ul>
-                    <li>Бүх </li>
+                    <li>Бүх</li>
                     <li>Бэлэн Бүтээгдэхүүн</li>
                     <li>Шингэн Бүтээгдэхүүн</li>
                     <li>Амттан</li>
@@ -60,137 +59,15 @@
             </div>
         </section>
         <section>
-            <article>
-                <a href="">
-                    <div>
-                        <img src="/GS25/gs25/img/product-img/kimbab.png" alt="Кимбаб" />
-                    </div>
-                    <h5>Кимбаб</h5>
-                    <div>3700₮</div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div>
-                        <img src="/GS25/gs25/img/product-img/onigiri.png" alt="Үхрийн махтай онигири" />
-                    </div>
-                    <h5>Үхрийн махтай онигири</h5>
-                    <div>2300₮</div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div>
-                        <img src="/GS25/gs25/img/product-img/chicken.png" alt="Chicken25 /org/" />
-                    </div>
-                    <h5>Chicken25 /org/</h5>
-                    <div>4900₮</div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div>
-                        <img src="/GS25/gs25/img/product-img/chickenbox.png" alt="Chicken25 /org/ box" />
-                    </div>
-                    <h5>Chicken25 /org/ box</h5>
-                    <div>22000₮</div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div>
-                        <img src="/GS25/gs25/img/product-img/hotdog.png" alt="" />
-                    </div>
-                    <h5>Хотдог</h5>
-                    <div>3000₮</div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div><img src="/GS25/gs25/img/product-img/buuz.png" alt="" /></div>
-                    <h5></h5>
-                    <div></div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div>
-                        <img src="/GS25/gs25/img/product-img/huushuur.png" alt="" />
-                    </div>
-                    <h5></h5>
-                    <div></div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div>
-                        <img src="/GS25/gs25/img/product-img/boortsog.png" alt="" />
-                    </div>
-                    <h5></h5>
-                    <div></div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div>
-                        <img src="/GS25/gs25/img/product-img/americano.png" alt="" />
-                    </div>
-                    <h5></h5>
-                    <div></div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div><img src="/GS25/gs25/img/product-img/pepsi.png" alt="" /></div>
-                    <h5></h5>
-                    <div></div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div>
-                        <img src="/GS25/gs25/img/product-img/cocacola.png" alt="" />
-                    </div>
-                    <h5></h5>
-                    <div></div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div>
-                        <img src="/GS25/gs25/img/product-img/puzetea.png" alt="" />
-                    </div>
-                    <h5></h5>
-                    <div></div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div><img src="" alt="" /></div>
-                    <h5></h5>
-                    <div></div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div><img src="" alt="" /></div>
-                    <h5></h5>
-                    <div></div>
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <div><img src="" alt="" /></div>
-                    <h5></h5>
-                    <div></div>
-                </a>
-            </article>
+            <article class="product-list"></article>
         </section>
     </main>
     <footer>
         <gs25-footer></gs25-footer>
     </footer>
-    <script src="./js/header-footer.js"></script>
+    <script src="js/header-footer.js"></script>
+    <script src="js/product-card.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 
 </html>
