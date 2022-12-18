@@ -12,5 +12,5 @@ function showSlides() {
         
         slides[slideIndex-1].style.display = "block";  
 
-        setTimeout(showSlides, 5000); // 5 sekund tutam shinechlegdene.
+        setTimeout(showSlides, 6000); // 6 sekund tutam shinechlegdene.
 }
