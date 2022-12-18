@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway:wght@500&display=swap");
 :root {
-  --main-color: #007CFF;
-  --second-color: #00D4EA;
-  --third-color: #D9EBF8;
-  --place-holder-color: #A8A8A8;
-  --text-fill-color: #3D4849;
-  --bg-color: #FFFDFD;
+  --main-color: #007cff;
+  --second-color: #00d4ea;
+  --third-color: #d9ebf8;
+  --place-holder-color: #a8a8a8;
+  --text-fill-color: #3d4849;
+  --bg-color: #fffdfd;
   --main-padding: 0 8em 0 8em;
   --mobile-padding: 0 1.2em 0 1.2em;
   --radius-5: 0.3125em;
   --radius-10: 0.625em;
   --radius-20: 1.25em;
+  --radius-30: 1.875em;
   --main-font: "PT Sans", sans-serif;
 }
