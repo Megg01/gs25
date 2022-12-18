@@ -13,7 +13,7 @@ var swiper = new Swiper(".product-cards", {
         },
         breakpoints: {
                 0: {
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                         spaceBetween: 20,
                 },
                 450: {
@@ -21,7 +21,7 @@ var swiper = new Swiper(".product-cards", {
                         spaceBetween: 20,
                 },
                 767: {
-                        slidesPerView: 4,
+                        slidesPerView: 5,
                         spaceBetween: 20,
                 },
                 1120: {
@@ -45,7 +45,7 @@ var swiper = new Swiper(".product-bonus-cards", {
         },
         breakpoints: {
                 0: {
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                         spaceBetween: 20,
                 },
                 450: {
@@ -53,7 +53,7 @@ var swiper = new Swiper(".product-bonus-cards", {
                         spaceBetween: 20,
                 },
                 767: {
-                        slidesPerView: 4,
+                        slidesPerView: 5,
                         spaceBetween: 20,
                 },
                 1120: {

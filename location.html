@@ -29,25 +29,32 @@
         <header>
                 <gs25-header></gs25-header>
         </header>
-        <main>
+        <main class="location-main">
                 <section class="location-search">
-                        <div>
-                                <input type="text" placeholder="Дэлгүүр хайх..." />
-                                <div class="location-list">
-                                        <ul>
-                                                <li>GS25 Чойжин</li>
-                                                <li>GS25 Сан</li>
-                                                <li>GS25 Муис</li>
-                                                <li>GS25 11-р хороолол</li>
-                                        </ul>
-                                </div>
-                        </div>
-                        <button onclick="initMap()">
+                        <input type="text" placeholder="Дэлгүүр хайх..." />
+                        <button>
                                 Хамгийн ойр салбар
                         </button>
-                        <button>
+                        <button onclick="myMap()">
                                 Бүх салбар
                         </button>
+                </section>
+                <section class="location-list">
+                        <ul>
+                                <li>GS25 Чойжин</li>
+                                <li>GS25 Сан</li>
+                                <li>GS25 Муис</li>
+                                <li>GS25 11-р хороолол</li>
+                                <li>    
+                                        <div class="location-card">
+                                                <div>
+                                                        <h4>GS25 Чойжин</h4>
+                                                        <p>Bluesky зүүн талд Ариг Аняатай залгаа</p>
+                                                        <p>Хаалттай</p>
+                                                </div>
+                                        </div>
+                                </li>
+                        </ul>
                 </section>
                 <section class="location-map">
                         <div class="googleMap"></div>
