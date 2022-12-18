@@ -6,7 +6,9 @@
   --place-holder-color: #A8A8A8;
   --text-fill-color: #3D4849;
   --bg-color: #FFFDFD;
-  --main-padding: 0 8em 0 8em;
+  --main-margin: 0 17em;
+  --mobile-margin: 0 1em;
+  --main-padding: 4em 0;
   --mobile-padding: 0 1.2em 0 1.2em;
   --radius-5: 0.3125em;
   --radius-10: 0.625em;

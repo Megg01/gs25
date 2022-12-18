@@ -223,14 +223,17 @@ main {
 .category-cards {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
+        margin: var(--main-margin);
+        padding: var(--main-padding);
+        padding-top: 1em;
 }
 .category-cards .cat-card {
         border: 0.0625em solid var(--text-fill-color);
         border-radius: var(--radius-10);
         padding: 1em 0.5em 0em 0.5em;
-        margin: 1em;
+        margin: 0em;
         transition: 0.3s;
         width: 8.5em;
         height: 8.5em;
@@ -260,7 +263,7 @@ main {
 
 .all-normal-product{
         background-color: var(--third-color);
-        padding: 4em 2em;
+        padding: var(--main-padding);
 }
 .all-bonus-product{
         padding: 4em 2em;
@@ -271,7 +274,7 @@ main {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 0 auto 2em auto;
+        margin: var(--main-margin);
         justify-content: space-between;
         max-width: 60.875em;
 }
@@ -403,11 +406,10 @@ main {
 /* LOCATION START */
 
 .location-search {
-        display: flex;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        margin: 7em 1em 0 1em;
-
+        display: block;
+}
+.location-search div{
+        margin-left: 17em;
 }
 
 .location-search {
@@ -430,6 +432,9 @@ main {
         .header-logo img{
                 width: 5em;
                 height: auto;
+        }
+        .category-cards{
+                margin: var(--mobile-margin);
         }
         .category-cards div{
                 width: 5em;
