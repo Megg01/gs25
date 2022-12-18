@@ -279,15 +279,23 @@ main {
         max-width: 60.875em;
 }
 
-.product-homepage-continue p,
-.product-bonus-homepage-continue p {
+.product-homepage-continue button,
+.product-bonus-homepage-continue button {
         text-align: center;
         border: none;
         border-radius: 1em;
         width: 10em;
         height: 1.5em;
         background-color: var(--second-color);
+        cursor: pointer;
 }
+.product-homepage-continue button:active,
+.product-bonus-homepage-continue button:active {
+        box-shadow: var(--button-active-box-shadow);
+        translate: var(--button-active-y-translate);
+}
+
+
 .product-homepage-continue .mobile-more,
 .product-bonus-homepage-continue .bonus-mobile-more{
         display: none;
@@ -438,6 +446,10 @@ main {
 .location-search button:hover{
         background-color: var(--main-color);
 }
+.location-search button:active{
+        box-shadow: var(--button-active-box-shadow);
+        transform: var(--button-active-y-translate);
+}
 .location-list{
         grid-column: 1 / 3;
         grid-row: 2 / 5;
@@ -456,15 +468,94 @@ main {
         width: 50em;
         height: 25em;
 }
-
-
 /* LOCATION END */
 
+/* HIRE START */
+.hr-main{
+        margin: var(--main-margin);
+        margin-top: 9em;
+}
+
+.hr-step-cards, .hr-job-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: var(--main-padding);
+}
+.hr-step-card{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: var(--hr-step-card-padding);
+        background-color: var(--second-color);
+        border: 1px solid var(--text-fill-color);
+        border-radius: var(--radius-10);
+        width: 14em;
+        height: auto;
+        margin-right: 0.5em;
+}
+.hr-job-card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.125em;
+        border: 1px solid var(--text-fill-color);
+        border-radius: var(--radius-10);
+        width: 18em;
+        height: auto;
+        margin-right: 0.5em;
+}
+.hr-step-card .hr-step-card-number{
+        position: absolute;
+        top: 0.125em;
+        left: 0.25em;
+}
+.hr-job-card-img{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: var(--radius-10);
+        width: 100%;
+        height: 20em;
+}
+.hr-job-card h5, .hr-job-card button{
+        position: absolute;
+}
+.hr-job-card h5{
+        font-size: 1.125em;
+        bottom: 2.5em;
+}
+.hr-job-card button{
+        text-align: center;
+        vertical-align: middle;
+        border-color: var(--second-color);
+        border-radius: 1em;
+        width: 8em;
+        height: 2em;
+        padding: var(--button-more-text-padding);
+        background-color: var(--bg-color);
+        bottom: 1em;
+        cursor: pointer;
+}
+.hr-job-card button:active {
+        box-shadow: var(--button-active-box-shadow);
+        transform: var(--button-active-y-translate);
+}
+
+/* HIRE END */
 @media (max-width: 767px){
+
+        /* HEADER */
         .header-logo img{
                 width: 5em;
                 height: auto;
         }
+        /* HEADER END */
+
+        /* CATEGORY */
         .category-cards{
                 margin: var(--mobile-margin);
                 justify-content: space-evenly;
@@ -479,7 +570,9 @@ main {
         .category-cards .cat-card{
                 margin-bottom: 1em;
         }
+        /* CATEGORY END */
         
+        /* ENGIIN BOLON BELEGTEI BUTEEGDEHUUN */
         .product-cards{
                 margin: var(--mobile-margin);
         }
@@ -494,12 +587,11 @@ main {
         .product-homepage-continue .mobile-more,
         .product-bonus-homepage-continue .bonus-mobile-more{
                 display: block;
+        }
+        .product-homepage-continue button,
+        .product-bonus-homepage-continue button{
                 width: 3em;
         }
-        
-
-
-
         .allNormalSwiper .swiper-button-prev,
         .allNormalSwiper .swiper-button-next,
         .allBonusSwiper .swiper-button-prev,
@@ -510,4 +602,14 @@ main {
         .product-bonus-cards-container{
                 font-size: 70%;
         }
+        
+        /* ENGIIN BOLON BELEGTEI BUTEEGDEHUUN END */
+
+
+        /* HR */
+        .hr-main{
+                margin: var(--mobile-margin);
+        }
+
+        /* HR END */
 }
