@@ -35,7 +35,7 @@
                         <button onclick="getlocation()">
                                 Хамгийн ойр салбар
                         </button>
-                        <button onclick="myMap()">
+                        <button onclick="initMap()">
                                 Бүх салбар
                         </button>
                 </section>
@@ -64,34 +64,8 @@
                 <gs25-footer></gs25-footer>
         </footer>
         <script src="./js/header-footer.js"></script>
-        <script>
-                function myMap() {
-                        var mapProp = {
-                                center: new google.maps.LatLng(47.918942, 106.916744),
-                                zoom: 13,
-                        };
-                        var map = new google.maps.Map(
-                                document.getElementsByClassName("googleMap")[0],
-                                mapProp
-                        );
-                }
-
-                var x = document.getElementById("location");
-                function getlocation() {
-                        if (navigator.geolocation) {
-                                navigator.geolocation.getCurrentPosition(showPosition)
-                        }
-                        else {
-                                alert("Sorry! your browser is not supporting")
-                        }
-                }
-
-                function showPosition(position) {
-                        var x = "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude;
-                        document.getElementById("location").innerHTML = x;
-                }  
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
+        <script src="js/location.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2bXKNDezDf6YNVc-SauobynNHPo4RJb8&callback=initMap"></script>
         <script src="js/location.js"></script>
         <script src="js/mobilemenu.js"></script>
 </body>
