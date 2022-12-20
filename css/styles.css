@@ -168,16 +168,6 @@ footer {
         height: 4em;
         text-decoration: none;
 }
-.social .icon{
-        width: 100%;
-        height: 4em;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-}
-.social a:hover .icon{
-        transform: rotateY(360deg);
-}
 
 .copyright{
         padding: 1em 8em 0.5em 8em;
@@ -294,12 +284,6 @@ main {
 .product-bonus-homepage-continue button:active {
         box-shadow: var(--button-active-box-shadow);
         translate: var(--button-active-y-translate);
-}
-
-
-.product-homepage-continue .mobile-more,
-.product-bonus-homepage-continue .bonus-mobile-more {
-  display: none;
 }
 .product-homepage-continue a,
 .product-bonus-homepage-continue a {
@@ -575,18 +559,13 @@ main {
         .product-bonus-homepage-continue{
                 margin: var(--mobile-margin);
         }
-        .product-homepage-continue .more,
-        .product-bonus-homepage-continue .bonus-more{
-                display: none;
-        }
-        .product-homepage-continue .mobile-more,
-        .product-bonus-homepage-continue .bonus-mobile-more{
-                display: block;
-        }
         .product-homepage-continue button,
         .product-bonus-homepage-continue button{
-                width: 3em;
+                width: 5.5em;
         }
+        /* .product-homepage-continue button::before,
+        .product-bonus-homepage-continue button::before{
+        } */
         .allNormalSwiper .swiper-button-prev,
         .allNormalSwiper .swiper-button-next,
         .allBonusSwiper .swiper-button-prev,
