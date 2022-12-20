@@ -1,25 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="test.css">
+        <style>
+                @import url(css/var.css);
+
+                .clickProduct {
+                        background-color: var(--third-color);
+                        display: flex;
+                }
+
+                .clickProduct-table {
+                        border: 0.0625em solid var(--text-fill-color);
+                        border-radius: var(--radius-10);
+                        display: flex;
+                }
+
+                .clickProduct-table:nth-child(0) {
+                        border-right-color: solid var(--text-fill-color);
+                }
+        </style>
 </head>
+
 <body>
         <div class="clickProduct">
                 <div class="clickProduct-img">
-                        <img src="img/product-img/product-hotdog1.webp" alt="hotdog-icon">
+                        <img src="img/product-img/product-hotdog1.webp" alt="hotdog-icon" />
                 </div>
                 <div class="clickProduct-desc">
                         <div class="clickProduct-name">
                                 <h4>Франкфурт хотдог / бяслагтай /</h4>
                         </div>
-                        <div class="clickProduct-price"><p>Үнэ: 3,000₮</p></div>
+                        <div class="clickProduct-price">
+                                <p>Үнэ: 3,000₮</p>
+                        </div>
                         <div class="clickProduct-table">
-                                <div>
-                                        <div><h5>ТЭЖЭЭЛЛЭГ ЧАНАР (100гр)</h5></div>
+                                <!-- <div>
+                                        <h5>ТЭЖЭЭЛЛЭГ ЧАНАР (100гр)</h5>
                                         <div>
                                                 <ul>
                                                         <li>Илчлэг: 314</li>
@@ -32,13 +53,24 @@
                                         </div>
                                 </div>
                                 <div>
-                                        <div><h5>ОРЦ НАЙРЛАГА</h5></div>
+                                        <h5>ОРЦ НАЙРЛАГА</h5>
                                         <div>
                                                 <p>Гурил, үхрийн махан зайдас амтлагч</p>
                                         </div>
-                                </div>
-                        </divc>
+                                </div> -->
+                                <table>
+                                        <tr>
+                                                <th>Month</th>
+                                                <th>Savings</th>
+                                        </tr>
+                                        <tr>
+                                                <td>January</td>
+                                                <td>$100</td>
+                                        </tr>
+                                </table>
+                        </div>
                 </div>
         </div>
 </body>
+
 </html>
