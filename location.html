@@ -32,7 +32,7 @@
         <main class="location-main">
                 <section class="location-search">
                         <input type="text" placeholder="Дэлгүүр хайх..." />
-                        <button>
+                        <button onclick="getlocation()">
                                 Хамгийн ойр салбар
                         </button>
                         <button onclick="myMap()">
@@ -45,8 +45,8 @@
                                 <li>GS25 Сан</li>
                                 <li>GS25 Муис</li>
                                 <li>GS25 11-р хороолол</li>
-                                <li>    
-                                        <div class="location-card">
+                                <li>
+                                        <div class="location-card" id="location">
                                                 <div>
                                                         <h4>GS25 Чойжин</h4>
                                                         <p>Bluesky зүүн талд Ариг Аняатай залгаа</p>
@@ -75,9 +75,25 @@
                                 mapProp
                         );
                 }
+
+                var x = document.getElementById("location");
+                function getlocation() {
+                        if (navigator.geolocation) {
+                                navigator.geolocation.getCurrentPosition(showPosition)
+                        }
+                        else {
+                                alert("Sorry! your browser is not supporting")
+                        }
+                }
+
+                function showPosition(position) {
+                        var x = "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude;
+                        document.getElementById("location").innerHTML = x;
+                }  
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
         <script src="js/location.js"></script>
         <script src="js/mobilemenu.js"></script>
 </body>
+
 </html>
