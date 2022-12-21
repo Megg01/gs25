@@ -1,8 +1,44 @@
 var ltd;
 var map;
 var mapProp;
-var marker;
-var center;
+var currentPositionMarker;
+var currentPositionCenter;
+
+const locations =
+        [
+                {
+                        "ltd": [47.91618, 106.91946],
+                        "properties": {
+                                "name": "GS25 Чойжин",
+                                "description": "Bluesky зүүн талд Ариг Аняатай залгаа",
+                                "time": "09:00 - 22:00"
+                        }
+                },
+                {
+                        "ltd": [47.90117, 106.91049],
+                        "properties": {
+                                "name": "GS25 Цэнгэлдэх",
+                                "description": "120-н автобусны урд талд Цэнгэлдэх хорооллын 210-р байр",
+                                "time": "09:00 - 23:00"
+                        }
+                },
+                {
+                        "ltd": [47.9274, 106.92176],
+                        "properties": {
+                                "name": "GS25 Хатагтай эмнэлэг",
+                                "description": "11-р хорооллын Дашчойлин хийдийн зүүн талд байрлах Хатагтай эмнэлгийн байр",
+                                "time": "07:00 - 22:00"
+                        }
+                },
+                {
+                        "ltd": [47.91766, 106.91146],
+                        "properties": {
+                                "name": "GS25 Ард",
+                                "description": "Цэцэг төвийн чанх урд талд байрлалтай",
+                                "time": "07:00 - 22:00"
+                        }
+                }
+        ];
 
 function initMap() {
         mapProp = {
@@ -13,23 +49,26 @@ function initMap() {
                 document.getElementsByClassName("googleMap")[0],
                 mapProp
         );
-        ltd = new google.maps.LatLng(47.928942, 106.916744);
-        var marker = new google.maps.Marker({
-                position: ltd,
-                map: map,
-        });
-        marker.addListener("click", () => {
-                map.setZoom(14);
-                map.setCenter(marker.getPosition());
-                center = map.getCenter();
-                var infowindow = new google.maps.InfoWindow({
-                        content:""+center,
+
+        var infowindow = new google.maps.InfoWindow(), marker, i;
+
+        for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(locations[i].ltd[0], locations[i].ltd[1]),
+                        map: map
                 });
-                infowindow.open(map, marker);
-        });
+
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                        return function () {
+                                map.setZoom(15.5);
+                                map.setCenter(marker.getPosition());
+                                infowindow.setContent(""+locations[i].properties.name+"<br>"+locations[i].properties.description+"<br>"+locations[i].properties.time);
+                                infowindow.open(map, marker);
+                        }
+                })(marker, i));
+        }
 }
 
-var x = document.getElementById("location");
 function getlocation() {
         if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(showPosition);
@@ -39,9 +78,37 @@ function getlocation() {
 }
 
 function showPosition(position) {
-        marker = new google.maps.Marker({
+        currentPositionMarker = new google.maps.Marker({
                 position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
                 map: map,
                 mapProp
         });
+        currentPositionMarker.addListener("click", () => {
+                map.setZoom(15.5);
+                map.setCenter(currentPositionMarker.getPosition());
+                center = map.getCenter();
+                var infowindow = new google.maps.InfoWindow({
+                        content: "Таны байршил",
+                });
+                infowindow.open(map, currentPositionMarker);
+
+                var x = distance(locations[1].ltd[0], locations[1].ltd[1] , currentPositionMarker.position.lat(), currentPositionMarker.position.lng());
+                alert(" "+x);
+                console.log(x);
+        });
+}
+function distance(lat1, lon1, lat2, lon2) {
+        var radlat1 = Math.PI * lat1/180
+        var radlat2 = Math.PI * lat2/180
+        var theta = lon1-lon2
+        var radtheta = Math.PI * theta/180
+        var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+        if (dist > 1) {
+                dist = 1;
+        }
+        dist = Math.acos(dist)
+        dist = dist * 180/Math.PI
+        dist = dist * 60 * 1.1515
+        dist = dist * 1.609344
+        return dist
 }
