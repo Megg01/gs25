@@ -92,11 +92,22 @@ function showPosition(position) {
                 });
                 infowindow.open(map, currentPositionMarker);
 
-                var x = distance(locations[1].ltd[0], locations[1].ltd[1] , currentPositionMarker.position.lat(), currentPositionMarker.position.lng());
+                var x = nearest(currentPositionMarker.position.lat(), currentPositionMarker.position.lng());
                 alert(" "+x);
                 console.log(x);
         });
 }
+function nearest(lat, lng) {
+        var dists = [];
+        for(var i = 0; i < locations.length; i++){
+                dists[i] = [];
+                dists[i][0] = distance(locations[i].ltd[0], locations[i].ltd[1], lat, lng);
+                dists[i][1]=locations[i].properties.name;
+        }
+        dists.sort;
+        return ""+dists[0][1]+", "+dists[0][0];
+}
+
 function distance(lat1, lon1, lat2, lon2) {
         var radlat1 = Math.PI * lat1/180
         var radlat2 = Math.PI * lat2/180
