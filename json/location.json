@@ -1,0 +1,27 @@
+
+[
+        {
+                "src": "img/product-img/product-hotdog1.webp",
+                "alt": "hotdog",
+                "name": "Франкфурт хотдог",
+                "price": "3,000₮"
+        },
+        {
+                "src": "img/product-img/product-hotdog2.webp",
+                "alt": "hotdog",
+                "name": "Тахиан махан хотдог",
+                "price": "3,000₮"
+        },
+        {
+                "src": "img/product-img/product-chicken1.webp",
+                "alt": "chicken",
+                "name": "Chicken25 /org/ box",
+                "price": "22,000₮"
+        },
+        {
+                "src": "img/product-img/product-chicken2.webp",
+                "alt": "chicken",
+                "name": "Chicken25 MIX box",
+                "price": "22,000₮"
+        }
+]
