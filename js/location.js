@@ -104,7 +104,8 @@ function nearest(lat, lng) {
                 dists[i][0] = distance(locations[i].ltd[0], locations[i].ltd[1], lat, lng);
                 dists[i][1]=locations[i].properties.name;
         }
-        dists.sort;
+
+        dists = dists.sort((a, b) => a[0] - b[0]);
         return ""+dists[0][1]+", "+dists[0][0];
 }
 
