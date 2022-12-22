@@ -1,44 +1,107 @@
-var ltd;
+const locations =
+[
+        {
+                "ltd": [47.91618, 106.91946],
+                "properties": {
+                        "name": "GS25 Чойжин",
+                        "description": "Bluesky зүүн талд Ариг Аняатай залгаа",
+                        "time": "09:00 - 22:00"
+                }
+        },
+        {
+                "ltd": [47.90117, 106.91049],
+                "properties": {
+                        "name": "GS25 Цэнгэлдэх",
+                        "description": "120-н автобусны урд талд Цэнгэлдэх хорооллын 210-р байр",
+                        "time": "09:00 - 23:00"
+                }
+        },
+        {
+                "ltd": [47.9274, 106.92176],
+                "properties": {
+                        "name": "GS25 Хатагтай эмнэлэг",
+                        "description": "11-р хорооллын Дашчойлин хийдийн зүүн талд байрлах Хатагтай эмнэлгийн байр",
+                        "time": "07:00 - 22:00"
+                }
+        },
+        {
+                "ltd": [47.91766, 106.91146],
+                "properties": {
+                        "name": "GS25 Ард",
+                        "description": "Цэцэг төвийн чанх урд талд байрлалтай",
+                        "time": "07:00 - 22:00"
+                }
+        },
+        {
+                "ltd": [47.92087, 106.90252],
+                "properties": {
+                        "name": "GS25 8 шарга",
+                        "description": "8 шаргын зам дагуу Бөртэ оёдлын үйлдвэрын чанх урд талд байрлалтай 5 давхар барилга",
+                        "time": "07:00 - 22:00"
+                }
+        },
+        {
+                "ltd": [47.92198, 106.94286],
+                "properties": {
+                        "name": "GS25 Сансар",
+                        "description": "Сансарын туслах замаар Баянцээлээс хойшоо зам дагуу",
+                        "time": "07:00 - 22:00"
+                }
+        },
+        {
+                "ltd": [47.90438, 106.92443],
+                "properties": {
+                        "name": "GS25 Нархан",
+                        "description": "Хоум плаза-н баруун талд Нархан хороолол",
+                        "time": "07:00 - 22:00"
+                }
+        },
+        {
+                "ltd": [47.9194, 106.94433],
+                "properties": {
+                        "name": "GS25 Зүүн 4н зам",
+                        "description": "Зүүн 4 замын уулзварын зүүн хойно Кемпинский зочид буудлын урд",
+                        "time": "08:00 - 23:00"
+                }
+        },
+        {
+                "ltd": [47.89828, 106.89496],
+                "properties": {
+                        "name": "GS25 Хан-Уул",
+                        "description": "ХУД хан-уул товер шилэн барилгын урд талын 32р байр баруун хойд буланд",
+                        "time": "07:00 - 00:00"
+                }
+        },
+        {
+                "ltd": [47.90295, 106.92494],
+                "properties": {
+                        "name": "GS25 Бүти Таун",
+                        "description": "ХУД И-мартын British school ард Бүти таун хороололд",
+                        "time": "07:00 - 00:00"
+                }
+        },
+        {
+                "ltd": [47.90295, 106.92494],
+                "properties": {
+                        "name": "GS25 ГССҮТ",
+                        "description": "Гэмтэлийн эмнэлгийн төв хаалганы хажууд",
+                        "time": "06:00 - 22:00"
+                }
+        },
+        {
+                "ltd": [47.91481, 106.921],
+                "properties": {
+                        "name": "GS25 Олимп",
+                        "description": "Олимпын гудамж Шангри-ла моллын хойшоо зам дагуу Голомт банкны хажууд",
+                        "time": "07:00 - 23:00"
+                }
+        }
+];
+
 var map;
 var mapProp;
 var currentPositionMarker;
 var currentPositionCenter;
-
-const locations =
-        [
-                {
-                        "ltd": [47.91618, 106.91946],
-                        "properties": {
-                                "name": "GS25 Чойжин",
-                                "description": "Bluesky зүүн талд Ариг Аняатай залгаа",
-                                "time": "09:00 - 22:00"
-                        }
-                },
-                {
-                        "ltd": [47.90117, 106.91049],
-                        "properties": {
-                                "name": "GS25 Цэнгэлдэх",
-                                "description": "120-н автобусны урд талд Цэнгэлдэх хорооллын 210-р байр",
-                                "time": "09:00 - 23:00"
-                        }
-                },
-                {
-                        "ltd": [47.9274, 106.92176],
-                        "properties": {
-                                "name": "GS25 Хатагтай эмнэлэг",
-                                "description": "11-р хорооллын Дашчойлин хийдийн зүүн талд байрлах Хатагтай эмнэлгийн байр",
-                                "time": "07:00 - 22:00"
-                        }
-                },
-                {
-                        "ltd": [47.91766, 106.91146],
-                        "properties": {
-                                "name": "GS25 Ард",
-                                "description": "Цэцэг төвийн чанх урд талд байрлалтай",
-                                "time": "07:00 - 22:00"
-                        }
-                }
-        ];
 
 function initMap() {
         mapProp = {
@@ -60,9 +123,9 @@ function initMap() {
 
                 google.maps.event.addListener(marker, 'click', (function (marker, i) {
                         return function () {
-                                map.setZoom(15.5);
+                                map.setZoom(15);
                                 map.setCenter(marker.getPosition());
-                                infowindow.setContent(""+locations[i].properties.name+"<br>"+locations[i].properties.description+"<br>"+locations[i].properties.time);
+                                infowindow.setContent("<strong>"+locations[i].properties.name+"</strong><br>"+locations[i].properties.description+"<br>"+locations[i].properties.time);
                                 infowindow.open(map, marker);
                         }
                 })(marker, i));
