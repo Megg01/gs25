@@ -616,6 +616,7 @@ main {
 .hr-click-table{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
 }
 .hr-click-table ul{
         padding-left: 1em;
@@ -719,6 +720,14 @@ main {
         /* HR */
         .hr-main {
                 margin: var(--mobile-margin);
+        }
+        .hr-click-container {
+                width: 30em;
+                height: 30em;
+                font-size: 70%;
+        }
+        .hr-click-table .col{
+                width: 100%;
         }
 
         /* HR END */
