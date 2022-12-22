@@ -32,79 +32,21 @@
                 <gs25-header></gs25-header>
         </header>
         <main>
-                <section class="slider-img">
-                        <div class="mySlides slide1" style="background-image: url('./img/gs25-slide2.webp');"></div>
-                        <div class="mySlides slide1" style="background-image: url('./img/gs25-slide4.webp');"></div>
-                        <div class="mySlides slide1" style="background-image: url('./img/gs25-slide3.webp');"></div>
-                </section>
+                <div class="slider-img swiper mySwiper">
+                        <div class="swiper-wrapper">
+                        <div class="mySlides swiper-slide" style="background-image: url('./img/gs25-slide2.webp');"></div>
+                        <div class="mySlides swiper-slide" style="background-image: url('./img/gs25-slide4.webp');"></div>
+                        <div class="mySlides swiper-slide" style="background-image: url('./img/gs25-slide3.webp');"></div>
+                        </div>
+                </div>
                 <section class="category-cards">
-                        <a href="#">
-                                <div class="cat-card">
-                                        <div class="cat-card-img"
-                                                style="background-image: url('https://img.icons8.com/plasticine/100/null/hot-dog.png');">
-                                        </div>
-                                        <div>
-                                                <h4>Бэлэн бүтээгдэхүүн</h4>
-                                        </div>
-                                </div>
-                        </a>
-                        <a href="#">
-                                <div class="cat-card">
-                                        <div class="cat-card-img"
-                                                style="background-image: url('https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/null/external-chips-brewery-flaticons-lineal-color-flat-icons.png');">
-                                        </div>
-                                        <div>
-                                                <h4>Амттан</h4>
-                                        </div>
-                                </div>
-                        </a>
-                        <a href="#">
-                                <div class="cat-card">
-                                        <div class="cat-card-img"
-                                                style="background-image: url('https://img.icons8.com/plasticine/100/1FB141/kawaii-soda.png');">
-                                        </div>
-                                        <div>
-                                                <h4>Шингэн хүнс</h4>
-                                        </div>
-                                </div>
-                        </a>
-                        <a href="#">
-                                <div class="cat-card">
-                                        <div class="cat-card-img"
-                                                style="background-image: url('https://img.icons8.com/plasticine/100/null/noodles.png');">
-                                        </div>
-                                        <div>
-                                                <h4>Түргэн хоол</h4>
-                                        </div>
-                                </div>
-                        </a>
-                        <a href="#">
-                                <div class="cat-card">
-                                        <div class="cat-card-img"
-                                                style="background-image: url('https://img.icons8.com/color/100/null/box-tissue.png');">
-                                        </div>
-                                        <div>
-                                                <h4>Ахуйн бараа</h4>
-                                        </div>
-                                </div>
-                        </a>
-                        <a href="#">
-                                <div class="cat-card">
-                                        <div class="cat-card-img"
-                                                style="background-image: url('https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/100/null/external-gift-valentines-day-flatart-icons-lineal-color-flatarticons-5.png');">
-                                        </div>
-                                        <div>
-                                                <h4>Урамшуулалтай</h4>
-                                        </div>
-                                </div>
-                        </a>
+                        <!-- Buteegdehuunii angilaluud orj irne -->
                 </section>
                 <section>
                         <section class="all-normal-product">
                                 <section class="product-homepage-continue">
                                         <h4>БҮТЭЭГДЭХҮҮН</h4>
-                                        <a href="product.html"><button><span class="more">Цааш үзэх</span><span
-                                                                class="mobile-more">+</span></button></a>
+                                        <a href="product.html"><button>Цааш үзэх</button></a>
                                 </section>
                                 <section class="product-normal-cards-container allNormalSwiper">
                                         <div class="product-cards swiper mySwiper">
@@ -119,8 +61,7 @@
                         <section class="all-bonus-product">
                                 <section class="product-bonus-homepage-continue">
                                         <h4>БЭЛЭГТЭЙ, УРАМШУУЛАЛТАЙ БҮТЭЭГДЭХҮҮН</h4>
-                                        <a href="product.html"><button><span class="bonus-more">Цааш үзэх</span><span
-                                                                class="bonus-mobile-more">+</span></button></a>
+                                        <a href="product.html"><button>Цааш үзэх</button></a>
                                 </section>
                                 <section class="product-bonus-cards-container allBonusSwiper">
                                         <div class="product-bonus-cards swiper mySwiper">
@@ -139,12 +80,14 @@
         <footer>
                 <gs25-footer></gs25-footer>
         </footer>
+        <div class="click-product-data"></div>
+        
+        <script src="js/header-footer.js"></script>
+        <script type="module" src="modules/product-card.js"></script>
+        <script type="module" src="modules/category-card.js"></script>
+        <!-- <script src="js/slideshow.js"></script> -->
+        <script src="https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"></script>
+        <script src="js/product-slider.js"></script>
+        <script src="js/mobilemenu.js"></script>
 </body>
-<script src="js/header-footer.js"></script>
-<script src="js/product-card.js"></script>
-<script src="js/slideshow.js"></script>
-<script src="https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"></script>
-<script src="js/product-slider.js"></script>
-<script src="js/mobilemenu.js"></script>
-
 </html>

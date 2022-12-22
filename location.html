@@ -32,10 +32,10 @@
         <main class="location-main">
                 <section class="location-search">
                         <input type="text" placeholder="Дэлгүүр хайх..." />
-                        <button>
+                        <button onclick="getlocation()">
                                 Хамгийн ойр салбар
                         </button>
-                        <button onclick="myMap()">
+                        <button onclick="initMap()">
                                 Бүх салбар
                         </button>
                 </section>
@@ -45,8 +45,8 @@
                                 <li>GS25 Сан</li>
                                 <li>GS25 Муис</li>
                                 <li>GS25 11-р хороолол</li>
-                                <li>    
-                                        <div class="location-card">
+                                <li>
+                                        <div class="location-card" id="location">
                                                 <div>
                                                         <h4>GS25 Чойжин</h4>
                                                         <p>Bluesky зүүн талд Ариг Аняатай залгаа</p>
@@ -64,20 +64,9 @@
                 <gs25-footer></gs25-footer>
         </footer>
         <script src="./js/header-footer.js"></script>
-        <script>
-                function myMap() {
-                        var mapProp = {
-                                center: new google.maps.LatLng(47.918942, 106.916744),
-                                zoom: 13,
-                        };
-                        var map = new google.maps.Map(
-                                document.getElementsByClassName("googleMap")[0],
-                                mapProp
-                        );
-                }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
         <script src="js/location.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGj-Dsa4PtrJiyATE_upQgOkfEkjFXqoQ&callback=initMap"></script>
         <script src="js/mobilemenu.js"></script>
 </body>
+
 </html>
