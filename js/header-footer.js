@@ -1,6 +1,6 @@
 class header extends HTMLElement {
-        connectedCallback() {
-                this.parentNode.innerHTML = `
+  connectedCallback() {
+    this.parentNode.innerHTML = `
                         <nav class="navigation-menu">
                                 <section class="header-logo">
                                         <a href="index.html">
@@ -20,28 +20,30 @@ class header extends HTMLElement {
                                         <div class="line3"></div>
                                 </div>
                         </nav>
-                `
-        }
+                `;
+  }
 }
 
 customElements.define("gs25-header", header);
 
 class footer extends HTMLElement {
-        connectedCallback() {
-                this.parentNode.innerHTML = `
+  connectedCallback() {
+    this.parentNode.innerHTML = `
                         <div class="footer-logo" style="background-image:url('./img/gs25-footer.webp');"></div>
                         <article class="footer-all-menu">
                                 <section class="footer-main-menu footer-col">
-                                <ul>
-                                        <li><h4>ҮНДСЭН ЦЭС</h4></li>
-                                        <li><a href="#">Нүүр хуудас</a></li>
-                                        <li><a href="product.html">Бүтээгдэхүүн</a></li>
-                                        <li><a href="location.html">Байршил</a></li>
-                                        <li><a href="hr.html">Хүний нөөц</a></li>
-                                        <li><a href="about.html">Бидний тухай</a></li>
-                                </ul>
+                                        <h2> </h2>
+                                        <ul>
+                                                <li><h4>ҮНДСЭН ЦЭС</h4></li>
+                                                <li><a href="#">Нүүр хуудас</a></li>
+                                                <li><a href="product.html">Бүтээгдэхүүн</a></li>
+                                                <li><a href="location.html">Байршил</a></li>
+                                                <li><a href="hr.html">Хүний нөөц</a></li>
+                                                <li><a href="about.html">Бидний тухай</a></li>
+                                        </ul>
                                 </section>
                                 <section class="footer-products footer-col">
+                                        <h2></h2>
                                         <ul>
                                                 <li><h4>БҮТЭЭГДЭХҮҮН</h4></li>
                                                 <li><a href="#">Бүх бүтээгдэхүүн</a></li>
@@ -54,6 +56,7 @@ class footer extends HTMLElement {
                                         </ul>
                                 </section>
                                 <section class="footer-address footer-col">
+                                        <h2></h2>
                                         <ul>
                                                 <li><h4>ХАЯГ</h4></li>
                                                 <li>GS25 Mongolia Distribution Center<br>18-р хороо, Хан-Уул дүүрэг</li>
@@ -69,6 +72,7 @@ class footer extends HTMLElement {
                                         </ul>
                                 </section>
                                 <section class="footer-app-social footer-col">
+                                        <h2></h2>
                                         <section class="app-download">
                                                 <h4>GS25 АПП ТАТАХ</h4>
                                                 <br>
@@ -80,6 +84,7 @@ class footer extends HTMLElement {
                                                 </a>
                                         </section>
                                         <section class="social">
+                                        <h2></h2>
                                                 <a href="https://www.facebook.com/gs25mn" arial-label="Facebook" target="_blank">
                                                         <div class="icon" style="background-image: url('img/social-icon-fb.webp');"></div>
                                                 </a>
@@ -93,9 +98,10 @@ class footer extends HTMLElement {
                                 </section>
                         </article>
                         <section class="copyright">
+                                <h2></h2>
                                 <p>Copyright &copy2022 Digital Concept. All Rights Reserved</p>
                         </section>
-                `
-        }
+                `;
+  }
 }
 customElements.define("gs25-footer", footer);
