@@ -616,7 +616,6 @@ main {
 .hr-click-table{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
 }
 .hr-click-table ul{
         padding-left: 1em;
@@ -725,6 +724,9 @@ main {
                 width: 30em;
                 height: 30em;
                 font-size: 70%;
+        }
+        .hr-click-table {
+                flex-wrap: wrap;
         }
         .hr-click-table .col{
                 width: 100%;
