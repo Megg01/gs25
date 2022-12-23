@@ -129,7 +129,7 @@ function initMap() {
 
         
         // let returnValue = "";
-
+        
         for (i = 0; i < locations.length; i++) {
                 marker = new google.maps.Marker({
                         position: new google.maps.LatLng(locations[i].ltd[0], locations[i].ltd[1]),
