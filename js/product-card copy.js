@@ -378,5 +378,5 @@ const ProductAllCardData = [
 window.onload = () => {
   App(ProductCardData, "normal-swiper");
   AppBonus(ProductBonusCardData, "bonus-swiper");
-  AppAll(ProductAllCardData, "allproducts");
+  AppAll(ProductAllCardData, "Allproducts");
 };

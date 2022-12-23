@@ -13,7 +13,7 @@ var swiper = new Swiper(".product-cards", {
         spaceBetween: 20,
         slidesPerGroup: 2,
         autoplay: {
-                delay: 2000,
+                delay: 5000,
         },
         rewind: true,
         navigation: {
@@ -36,8 +36,8 @@ var swiper = new Swiper(".product-cards", {
                 1120: {
                         slidesPerView: 5,
                         spaceBetween: 20,
-                },
-        },
+                }
+        }
 });
 var swiper = new Swiper(".product-bonus-cards", {
         speed:1000,
@@ -45,7 +45,7 @@ var swiper = new Swiper(".product-bonus-cards", {
         spaceBetween: 20,
         slidesPerGroup: 2,
         autoplay: {
-                delay: 2000,
+                delay: 5000,
         },
         rewind: true,
         navigation: {
@@ -68,6 +68,6 @@ var swiper = new Swiper(".product-bonus-cards", {
                 1120: {
                         slidesPerView: 5,
                         spaceBetween: 20,
-                },
-        },
+                }
+        }
 });

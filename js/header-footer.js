@@ -84,14 +84,8 @@ class footer extends HTMLElement {
                                                 </a>
                                         </section>
                                         <section class="social">
-<<<<<<< HEAD
-                                        <h2></h2>
-                                                <a href="https://www.facebook.com/gs25mn" arial-label="Facebook" target="_blank">
-                                                        <div class="icon" style="background-image: url('img/social-icon-fb.webp');"></div>
-=======
                                                 <a href="https://www.facebook.com/gs25mn" class="icon" arial-label="Facebook" target="_blank">
                                                         <img src="img/social-icon-fb.webp" alt="facebook" width="64px" height="64px">
->>>>>>> 105602905712bf27ce4c7a13be4a0a385ae17958
                                                 </a>
                                                 <a href="https://www.instagram.com/gs25mn/" class="icon" arial-label="Instagram" target="_blank">
                                                         <img src="img/social-icon-ig.webp" alt="facebook" width="64px" height="64px">
