@@ -22,6 +22,9 @@
   --main-font: "PT Sans", sans-serif;
   --product-margin: 0em 5em 0 17em;
 
+
+  --mobile-main-section-margin: 6em 1em 0;
+
   /* for button */
   --button-inner-text-padding: 0.625em;
   /* for "more" button */
