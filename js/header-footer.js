@@ -32,7 +32,6 @@ class footer extends HTMLElement {
                         <div class="footer-logo" style="background-image:url('./img/gs25-footer.webp');"></div>
                         <article class="footer-all-menu">
                                 <section class="footer-main-menu footer-col">
-                                        <h2> </h2>
                                         <ul>
                                                 <li><h4>ҮНДСЭН ЦЭС</h4></li>
                                                 <li><a href="#">Нүүр хуудас</a></li>
@@ -43,7 +42,6 @@ class footer extends HTMLElement {
                                         </ul>
                                 </section>
                                 <section class="footer-products footer-col">
-                                        <h2></h2>
                                         <ul>
                                                 <li><h4>БҮТЭЭГДЭХҮҮН</h4></li>
                                                 <li><a href="#">Бүх бүтээгдэхүүн</a></li>
@@ -56,7 +54,6 @@ class footer extends HTMLElement {
                                         </ul>
                                 </section>
                                 <section class="footer-address footer-col">
-                                        <h2></h2>
                                         <ul>
                                                 <li><h4>ХАЯГ</h4></li>
                                                 <li>GS25 Mongolia Distribution Center<br>18-р хороо, Хан-Уул дүүрэг</li>
@@ -72,7 +69,6 @@ class footer extends HTMLElement {
                                         </ul>
                                 </section>
                                 <section class="footer-app-social footer-col">
-                                        <h2></h2>
                                         <section class="app-download">
                                                 <h4>GS25 АПП ТАТАХ</h4>
                                                 <br>
