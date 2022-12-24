@@ -31,7 +31,7 @@
         </header>
         <main class="location-main">
                 <section class="location-search">
-                        <input type="text" placeholder="Дэлгүүр хайх..." />
+                        <input type="text" id="locationInput" onkeyup="searchLocation()" placeholder="Дэлгүүр хайх... /нэрээр/" />
                         <section class="location-list">
                                 <ul class="location-ul">
                                 </ul>
@@ -48,11 +48,9 @@
                 <section class="location-map">
                         <div id="floating-panel">
                                 <b>Очих төрлөө сонгоно уу: </b>
-                                <select id="mode">
-                                        <option value="DRIVING">Driving</option>
-                                        <option value="WALKING">Walking</option>
-                                        <option value="BICYCLING">Bicycling</option>
-                                        <option value="TRANSIT">Transit</option>
+                                <select id="direction-mode">
+                                        <option value="WALKING">Алхаж</option>
+                                        <option value="DRIVING">Машинаар</option>
                                 </select>
                         </div>
                         <div class="googleMap"> 
