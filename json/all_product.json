@@ -14,13 +14,6 @@
     "bonus": ""
   },
   {
-    "src": "img/product-img/product-bonus-drink1.webp",
-    "alt": "juice",
-    "name": "Жүүс YouUs Алим 330Мл",
-    "price": "1,400₮",
-    "bonus": "2+1"
-  },
-  {
     "src": "img/product-img/product-chicken1.webp",
     "alt": "chicken",
     "name": "Chicken25 /org/ box",
@@ -33,13 +26,6 @@
     "name": "Chicken25 MIX box",
     "price": "22,000₮",
     "bonus": ""
-  },
-  {
-    "src": "img/product-img/product-bonus-suu2.webp",
-    "alt": "milk",
-    "name": "Сүү Вайб Кафе латте 180 гр",
-    "price": "1,700₮",
-    "bonus": "2+1"
   },
   {
     "src": "img/product-img/product-chicken3.webp",
@@ -56,13 +42,6 @@
     "bonus": ""
   },
   {
-    "src": "img/product-img/product-bonus-chips1.webp",
-    "alt": "chips",
-    "name": "Чипс Realprice эрдэнэшиштэй",
-    "price": "7,900₮",
-    "bonus": "1+1"
-  },
-  {
     "src": "img/product-img/product-coffee1.webp",
     "alt": "coffee",
     "name": "Кафе25 Aмерикано",
@@ -77,25 +56,11 @@
     "bonus": ""
   },
   {
-    "src": "img/product-img/product-bonus-honey.webp",
-    "alt": "honey",
-    "name": "Халбага зөгийн бал 10Гр",
-    "price": "1,600₮",
-    "bonus": "1+1"
-  },
-  {
     "src": "img/product-img/product-boortsog.webp",
     "alt": "mantuu",
     "name": "Боорцог / мушгиа /",
     "price": "1,000₮",
     "bonus": ""
-  },
-  {
-    "src": "img/product-img/product-bonus-water.webp",
-    "alt": "water",
-    "name": "Ус Aqua Se 500Мл",
-    "price": "9,500₮",
-    "bonus": "2+1"
   },
   {
     "src": "img/product-img/product-bonus-chips1.webp",
@@ -112,25 +77,11 @@
     "bonus": ""
   },
   {
-    "src": "img/product-img/product-bonus-suu1.webp",
-    "alt": "milk",
-    "name": "Сүү Вайб Улаан хүч 180 гр",
-    "price": "1,700₮",
-    "bonus": "2+1"
-  },
-  {
     "src": "img/product-img/product-bonus-belengoimon1.webp",
     "alt": "noodle",
     "name": "Бэлэн гоймон Chow mein 110г",
     "price": "5,100₮",
     "bonus": ""
-  },
-  {
-    "src": "img/product-img/product-bonus-belengoimon1.webp",
-    "alt": "noodle",
-    "name": "Бэлэн гоймон Chow mein 110г",
-    "price": "5,100₮",
-    "bonus": "2+1"
   },
   {
     "src": "img/product-img/product-bonus-suu2.webp",
@@ -138,12 +89,5 @@
     "name": "Сүү Вайб Кафе латте 180 гр",
     "price": "1,700₮",
     "bonus": ""
-  },
-  {
-    "src": "img/product-img/product-bonus-fishka1.webp",
-    "alt": "fishka",
-    "name": "Самар Fishka давсалсан 50гр",
-    "price": "1,800₮",
-    "bonus": "2+1"
   }
 ]
