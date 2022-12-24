@@ -94,9 +94,9 @@ main {
 
         .nav-links {
                 position: fixed;
-                right: -120%;
+                left: -120%;
                 width: 100%;
-                top: 5.5em;
+                top: 5.5rem;
                 transition: 0.4s;
                 padding: 0;
                 flex-direction: column;
@@ -104,18 +104,20 @@ main {
         }
 
         .nav-links.open {
+                margin-top: -1em;
                 left: 0;
                 z-index: 11;
         }
 
         .fade {
                 margin: 1em 0 1em 0;
+                padding: 0;
         }
 }
 
 /*Animating Hamburger Icon on Click*/
 .toggle .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-45deg) translate(-5px, 8px);
 }
 
 .toggle .line2 {
@@ -124,7 +126,7 @@ main {
 }
 
 .toggle .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-5px, -8px);
 }
 
 /* FOOTER START */
@@ -693,12 +695,13 @@ main {
 
         .category-cards .cat-card {
                 margin-bottom: 1em;
+                text-align: -webkit-center;
         }
 
         /* CATEGORY END */
 
         /* ENGIIN BOLON BELEGTEI BUTEEGDEHUUN */
-        .product-cards {
+        .product-cards, .product-bonus-cards {
                 margin: var(--mobile-margin);
         }
 
@@ -719,7 +722,7 @@ main {
 
         .product-homepage-continue button,
         .product-bonus-homepage-continue button {
-                width: 3em;
+                width: 6em;
         }
 
         .allNormalSwiper .swiper-button-prev,
@@ -768,9 +771,9 @@ main {
         /* LOCATION END */
 
         /* HR */
-        /* .hr-main {
-                margin: var(--mobile-margin);
-        } */
+        .hr-main {
+                margin: var(--mobile-main-section-margin);
+        }
 
         .hr-click-container {
                 display: flex;
