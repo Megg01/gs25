@@ -337,6 +337,7 @@ main {
   overflow: hidden;
   width: 10em;
   height: 16em;
+  position: relative;
 }
 
 .product-card:hover,
@@ -347,7 +348,7 @@ main {
   box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-/* 
+
 .product-card-img-container,
 .product-bonus-card-img-container {
   background-position: center;
@@ -360,7 +361,7 @@ main {
 .product-card-name,
 .product-bonus-card-name {
   margin: 0.5em 0 0 0;
-} */
+}
 
 .product-card-price p,
 .product-bonus-card-price p {
