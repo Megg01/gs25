@@ -1,6 +1,7 @@
-const locations =
+const locations = 
 [
         {
+                "id": 1,
                 "ltd": [47.91618, 106.91946],
                 "properties": {
                         "name": "GS25 Чойжин",
@@ -9,6 +10,7 @@ const locations =
                 }
         },
         {
+                "id": 2,
                 "ltd": [47.90117, 106.91049],
                 "properties": {
                         "name": "GS25 Цэнгэлдэх",
@@ -17,6 +19,7 @@ const locations =
                 }
         },
         {
+                "id": 3,
                 "ltd": [47.9274, 106.92176],
                 "properties": {
                         "name": "GS25 Хатагтай эмнэлэг",
@@ -25,6 +28,7 @@ const locations =
                 }
         },
         {
+                "id": 4,
                 "ltd": [47.91766, 106.91146],
                 "properties": {
                         "name": "GS25 Ард",
@@ -33,6 +37,7 @@ const locations =
                 }
         },
         {
+                "id": 5,
                 "ltd": [47.92087, 106.90252],
                 "properties": {
                         "name": "GS25 8 шарга",
@@ -41,6 +46,7 @@ const locations =
                 }
         },
         {
+                "id": 6,
                 "ltd": [47.92198, 106.94286],
                 "properties": {
                         "name": "GS25 Сансар",
@@ -49,6 +55,7 @@ const locations =
                 }
         },
         {
+                "id": 7,
                 "ltd": [47.90438, 106.92443],
                 "properties": {
                         "name": "GS25 Нархан",
@@ -57,6 +64,7 @@ const locations =
                 }
         },
         {
+                "id": 8,
                 "ltd": [47.9194, 106.94433],
                 "properties": {
                         "name": "GS25 Зүүн 4н зам",
@@ -65,6 +73,7 @@ const locations =
                 }
         },
         {
+                "id": 9,
                 "ltd": [47.89828, 106.89496],
                 "properties": {
                         "name": "GS25 Хан-Уул",
@@ -73,6 +82,7 @@ const locations =
                 }
         },
         {
+                "id": 10,
                 "ltd": [47.90295, 106.92494],
                 "properties": {
                         "name": "GS25 Бүти Таун",
@@ -81,6 +91,7 @@ const locations =
                 }
         },
         {
+                "id": 11,
                 "ltd": [47.90295, 106.92494],
                 "properties": {
                         "name": "GS25 ГССҮТ",
@@ -89,6 +100,7 @@ const locations =
                 }
         },
         {
+                "id": 12,
                 "ltd": [47.91481, 106.921],
                 "properties": {
                         "name": "GS25 Олимп",
@@ -97,11 +109,11 @@ const locations =
                 }
         }
 ];
-
 var map;
 var mapProp;
 var currentPositionMarker;
 var currentPositionCenter;
+var markers = [];
 
 function initMap() {
         mapProp = {
@@ -115,21 +127,60 @@ function initMap() {
 
         var infowindow = new google.maps.InfoWindow(), marker, i;
 
+        
+        // let returnValue = "";
+        
         for (i = 0; i < locations.length; i++) {
                 marker = new google.maps.Marker({
                         position: new google.maps.LatLng(locations[i].ltd[0], locations[i].ltd[1]),
-                        map: map
+                        map: map,
+                        icon: "../img/map-marker.webp"
                 });
-
+                markers.push(marker);
+                let obj = render(locations[i]);
+                let returnValue = obj;
+                
+                document.getElementsByClassName("location-ul")[0].insertAdjacentHTML("beforeend", returnValue);
                 google.maps.event.addListener(marker, 'click', (function (marker, i) {
                         return function () {
                                 map.setZoom(15);
                                 map.setCenter(marker.getPosition());
                                 infowindow.setContent("<strong>"+locations[i].properties.name+"</strong><br>"+locations[i].properties.description+"<br>"+locations[i].properties.time);
                                 infowindow.open(map, marker);
+                                var item = document.getElementById("location-"+(i+1));
+                                item.childNodes[1].style.borderColor = "#007cff";
                         }
                 })(marker, i));
         }
+}
+function render(location) {
+        return `
+        <li id="location-${location.id}">
+                <div class="location-card">
+                                <h4>${location.properties.name}</h4>
+                                <p>${location.properties.description}</p>
+                                <p>${location.properties.time}</p>
+                                <p>${location.ltd[0]}, ${location.ltd[1]}</p>
+                </div>
+        </li>
+        `;
+}
+function getMarkerList(){
+
+        let returnValue = "";
+        
+        let obj = new LocationCardItem(
+                locations[i].properties.name,
+                locations[i].properties.description,
+                locations[i].properties.time,
+                locations[i].ltd[0],
+                locations[i].ltd[1]
+        );
+        returnValue += obj.render();
+
+        document
+                .getElementsByClassName("location-ul")[0]
+                .insertAdjacentHTML("beforeend", returnValue);
 }
 
 function getlocation() {
@@ -144,22 +195,50 @@ function showPosition(position) {
         currentPositionMarker = new google.maps.Marker({
                 position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
                 map: map,
+                icon: "../img/map-marker-my.webp",
                 mapProp
         });
-        currentPositionMarker.addListener("click", () => {
-                map.setZoom(15.5);
-                map.setCenter(currentPositionMarker.getPosition());
-                center = map.getCenter();
-                var infowindow = new google.maps.InfoWindow({
-                        content: "Таны байршил",
-                });
-                infowindow.open(map, currentPositionMarker);
-
-                var x = nearest(currentPositionMarker.position.lat(), currentPositionMarker.position.lng());
-                alert(" "+x);
-                console.log(x);
+        map.setZoom(15.5);
+        map.setCenter(currentPositionMarker.getPosition());
+        center = map.getCenter();
+        var infowindow = new google.maps.InfoWindow({
+                content: "Таны байршил",
         });
+        infowindow.open(map, currentPositionMarker);
+
+        var nearestLocId = nearest(currentPositionMarker.position.lat(), currentPositionMarker.position.lng());
+        
+        var listContainer = document.getElementsByClassName("location-ul")[0];
+
+        var nearestElement = document.getElementById("location-"+nearestLocId);
+        
+        listContainer.innerHTML = nearestElement.innerHTML;
+        
+        var nearestMarkers = nearestElement.childNodes[1].childNodes[7].textContent.split(", ");
+        deleteMarkers(nearestMarkers[0], nearestMarkers[1]);
+        
+        
+        const directionsRenderer = new google.maps.DirectionsRenderer();
+        const directionsService = new google.maps.DirectionsService();
+
+        directionsRenderer.setMap(map);
+        calculateAndDisplayRoute(directionsService, directionsRenderer, currentPositionMarker.position.lat(), currentPositionMarker.position.lng(), nearestMarkers[0], nearestMarkers[1]);
 }
+function calculateAndDisplayRoute(directionsService, directionsRenderer, lat1, lon1, lat2, lon2) {
+        const selectedMode = "WALKING";
+      
+        directionsService.route({
+                origin: { lat: lat1, lng: lon1 },
+                destination: { lat: parseFloat(lat2), lng: parseFloat(lon2) },
+                
+                travelMode: google.maps.TravelMode[selectedMode],
+        })
+                .then((response) => {
+                        directionsRenderer.setDirections(response);
+                })
+        .catch((e) => window.alert("Directions request failed due to " + e));
+}
+
 function nearest(lat, lng) {
         var dists = [];
         for(var i = 0; i < locations.length; i++){
@@ -167,9 +246,13 @@ function nearest(lat, lng) {
                 dists[i][0] = distance(locations[i].ltd[0], locations[i].ltd[1], lat, lng);
                 dists[i][1]=locations[i].properties.name;
         }
-
-        dists = dists.sort((a, b) => a[0] - b[0]);
-        return ""+dists[0][1]+", "+dists[0][0];
+        dists.sort((a, b) => a[0] - b[0]);
+        
+        for(var i = 0; i < locations.length; i++){
+                if(locations[i].properties.name == dists[0][1])
+                        return i+1;
+        }
+        return -1;
 }
 
 function distance(lat1, lon1, lat2, lon2) {
@@ -187,3 +270,11 @@ function distance(lat1, lon1, lat2, lon2) {
         dist = dist * 1.609344
         return dist
 }
+function deleteMarkers(lat, lng) {
+        //Loop through all the markers and remove
+        for (var i = 0; i < markers.length; i++) {
+                if((markers[i].position.lat() != lat) && (markers[i].position.lng() != lng)){
+                         markers[i].setMap(null);
+                }
+        }
+};

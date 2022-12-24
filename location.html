@@ -32,6 +32,12 @@
         <main class="location-main">
                 <section class="location-search">
                         <input type="text" placeholder="Дэлгүүр хайх..." />
+                        <section class="location-list">
+                                <ul class="location-ul">
+                                </ul>
+                        </section>
+                </section>
+                <section class="location-button">
                         <button onclick="getlocation()">
                                 Хамгийн ойр салбар
                         </button>
@@ -39,25 +45,18 @@
                                 Бүх салбар
                         </button>
                 </section>
-                <section class="location-list">
-                        <ul>
-                                <li>GS25 Чойжин</li>
-                                <li>GS25 Сан</li>
-                                <li>GS25 Муис</li>
-                                <li>GS25 11-р хороолол</li>
-                                <li>
-                                        <div class="location-card" id="location">
-                                                <div>
-                                                        <h4>GS25 Чойжин</h4>
-                                                        <p>Bluesky зүүн талд Ариг Аняатай залгаа</p>
-                                                        <p>Хаалттай</p>
-                                                </div>
-                                        </div>
-                                </li>
-                        </ul>
-                </section>
                 <section class="location-map">
-                        <div class="googleMap"></div>
+                        <div id="floating-panel">
+                                <b>Очих төрлөө сонгоно уу: </b>
+                                <select id="mode">
+                                        <option value="DRIVING">Driving</option>
+                                        <option value="WALKING">Walking</option>
+                                        <option value="BICYCLING">Bicycling</option>
+                                        <option value="TRANSIT">Transit</option>
+                                </select>
+                        </div>
+                        <div class="googleMap"> 
+                        </div>
                 </section>
         </main>
         <footer>
@@ -65,7 +64,7 @@
         </footer>
         <script src="./js/header-footer.js"></script>
         <script src="js/location.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGj-Dsa4PtrJiyATE_upQgOkfEkjFXqoQ&callback=initMap"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGj-Dsa4PtrJiyATE_upQgOkfEkjFXqoQ&callback=initMap" defer></script>
         <script src="js/mobilemenu.js"></script>
 </body>
 </html>
