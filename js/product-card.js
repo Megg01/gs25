@@ -239,14 +239,14 @@ class ProductAllCardItem {
     this.name = name;
     this.price = price;
   }
-  render2() {
+  render() {
     return `
                 <div class="product-card swiper-slide">
-                        <div class="product-card-img-container"  style="background-image: url('${this.src}');"></div>
-                        <div class="product-card-name">
+                        <div class="product_allcard_img_container"  style="background-image: url('${this.src}');"></div>
+                        <div class="product_allcard_name">
                                 <h4>${this.name}</h4>
                         </div>
-                        <div class="product-card-price">
+                        <div class="product_allcard_price">
                                 <p>${this.price}</p>
                         </div>
                 </div>
@@ -264,7 +264,7 @@ function AppAll(alldatas, targetAllElement) {
       data.name,
       data.price
     );
-    retAllVal += productAllObj.render2();
+    retAllVal += productAllObj.render();
   }
   document
     .getElementsByClassName(targetAllElement)[0]
@@ -378,5 +378,5 @@ const ProductAllCardData = [
 window.onload = () => {
   App(ProductCardData, "normal-swiper");
   AppBonus(ProductBonusCardData, "bonus-swiper");
-  AppAll(ProductAllCardData, "allproducts");
+  AppAll(ProductAllCardData, "all_products");
 };
