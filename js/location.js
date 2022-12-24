@@ -118,6 +118,7 @@ var mapProp;
 var currentPositionMarker;
 var currentPositionCenter;
 var markers = [];
+var infowindows = [];
 
 function initMap() {
         mapProp = {
@@ -129,9 +130,7 @@ function initMap() {
                 mapProp
         );
 
-        var infowindow = new google.maps.InfoWindow(),
-                marker,
-                i;
+        var infowindow, marker, i;
 
         // let returnValue = "";
 
@@ -144,13 +143,25 @@ function initMap() {
                         map: map,
                         icon: "../img/map-marker.webp",
                 });
+                infowindow = new google.maps.InfoWindow();
+                infowindow.setContent(
+                        "<strong>" +
+                        locations[i].properties.name +
+                        "</strong><br>" +
+                        locations[i].properties.description +
+                        "<br>" +
+                        locations[i].properties.time
+                );
+
                 markers.push(marker);
+                infowindows.push(infowindow);
                 let obj = render(locations[i]);
                 let returnValue = obj;
 
                 document
                         .getElementsByClassName("location-ul")[0]
                         .insertAdjacentHTML("beforeend", returnValue);
+
                 google.maps.event.addListener(
                         marker,
                         "click",
@@ -158,17 +169,7 @@ function initMap() {
                                 return function () {
                                         map.setZoom(15);
                                         map.setCenter(marker.getPosition());
-                                        infowindow.setContent(
-                                                "<strong>" +
-                                                locations[i].properties.name +
-                                                "</strong><br>" +
-                                                locations[i].properties.description +
-                                                "<br>" +
-                                                locations[i].properties.time
-                                        );
-                                        infowindow.open(map, marker);
-                                        var item = document.getElementById("location-" + (i + 1));
-                                        item.childNodes[1].style.borderColor = "#007cff";
+                                        infowindows[i].open(map, marker);
                                 };
                         })(marker, i)
                 );
@@ -176,7 +177,7 @@ function initMap() {
 }
 function render(location) {
         return `
-        <li id="location-${location.id}" class="for-location-search">
+        <li id="location-${location.id}" class="for-location-search" onclick="clickLiPopMarker(this.id)">
                 <div class="location-card">
                                 <h4>${location.properties.name}</h4>
                                 <p>${location.properties.description}</p>
@@ -350,4 +351,11 @@ function searchLocation() {
                         li[i].style.display = "none";
                 }
         }
+}
+
+function clickLiPopMarker(id){
+        map.setZoom(15);
+        map.setCenter(markers[id.split("-")[1]-1].getPosition());
+        infowindows[id.split("-")[1]-1].open(map, markers[id.split("-")[1]-1]);
+        // console.log();
 }
