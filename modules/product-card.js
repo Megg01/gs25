@@ -86,6 +86,8 @@ export default class ProductCard {
 const productCard = new ProductCard("./json/products.json");
 const productBonusCard = new ProductCard("./json/products-bonus.json");
 const productAllCard = new ProductCard("./json/all_product.json");
+const productAllBonusCard = new ProductCard("./json/all_Bonusproduct.json");
 productCard.Download("normal-swiper");
 productBonusCard.Download("bonus-swiper");
 productAllCard.Download("all_products");
+productAllBonusCard.Download("all_Bonus_products");
