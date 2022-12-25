@@ -30,6 +30,6 @@
   --button-inner-text-padding: 0.625em;
   /* for "more" button */
   --button-more-text-padding: 0.125em;
-  --button-active-y-translate: translateY(0.125em);
+  --button-active-y-translate: 0.125em;
   --button-active-box-shadow: 0 0.125em var(--text-fill-color);
 }
