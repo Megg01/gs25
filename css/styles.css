@@ -977,7 +977,7 @@ main {
 }
 
 .hovertext {
-  background-color: var(--main-color);
+  background-color: var(--second-color);
   transform: rotateY(180deg);
   color: var(--bg-color);
   text-align: center;
@@ -1024,4 +1024,21 @@ main {
   font-size: 1em;
   font-weight: bold;
 }
+@media (max-width: 767px) {
+  .aboutVision {
+    display: flex;
+    flex-direction: column;
+    margin: 0em;
+  }
+  /* .about_body {
+    display: flex;
+    flex-direction: column;
+  } */
+  .aboutAllItem {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0em;
+  }
+}
+
 /* About end */
