@@ -38,13 +38,13 @@ class ProductCardItem {
 
 function haha(data) {
   var productsClassName =
-    document.getElementsByClassName("products-list")[0].innerHTML;
+    document.getElementsByClassName("products_list")[0].innerHTML;
   switch (data) {
     case 1:
       productsClassName = `<div class="all-products all-Bonus-products"></div>`;
       break;
     case 2:
-      productsClassName = `<div class="all-products all-Bonus-products"></div>`;
+      productsClassName = `<div class="belen_product"></div>`;
       break;
     case 3:
       productsClassName = `<div class="all-products all-Bonus-products"></div>`;
@@ -94,5 +94,7 @@ export default class ProductCard {
 
 const productAllCard = new ProductCard("./json/all_product.json");
 const productAllBonusCard = new ProductCard("./json/all_Bonusproduct.json");
-productAllCard.Download("all-products");
-productAllBonusCard.Download("all-Bonus-products");
+const productBelenCard = new ProductCard("./json/belenProduct.json");
+productAllCard.Download("all_products");
+productAllBonusCard.Download("all_Bonus_products");
+productBelenCard.Download("belen_product");
