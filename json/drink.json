@@ -1,0 +1,74 @@
+[
+  {
+    "src": "img/product-img/drink/cocacola.png",
+    "alt": "cocaCola",
+    "name": "Хүслийн Ундаа Coca Cola 300Мл",
+    "price": "1,200₮"
+  },
+  {
+    "src": "img/product-img/drink/fanta.png",
+    "alt": "fanta",
+    "name": "Хүслийн Ундаа Fanta 300Мл",
+    "price": "1,200₮"
+  },
+  {
+    "src": "img/product-img/drink/goy.png",
+    "alt": "goy",
+    "name": "Хүслийн Ундаа Гоё 300Мл",
+    "price": "1,200₮"
+  },
+  {
+    "src": "img/product-img/drink/minutemaid.png",
+    "alt": "minutemaid",
+    "name": "Хүслийн Ундаа Coca Cola 300Мл",
+    "price": "1,200₮"
+  },
+  {
+    "src": "img/product-img/drink/mountain.png",
+    "alt": "mountain",
+    "name": "Хүслийн Ундаа Mountain Dew 500Мл",
+    "price": "1,850₮"
+  },
+  {
+    "src": "img/product-img/drink/nimbeg.png",
+    "alt": "nimbeg",
+    "name": "Жүүс Нимбэг 300Мл",
+    "price": "1,500₮"
+  },
+  {
+    "src": "img/product-img/drink/peacetea.png",
+    "alt": "peacetea",
+    "name": "Цай Peace Tea 500Мл",
+    "price": "1,550₮"
+  },
+  {
+    "src": "img/product-img/drink/punch.png",
+    "alt": "punch",
+    "name": "Ундаа punch 1,25л",
+    "price": "3,000₮"
+  },
+  {
+    "src": "img/product-img/drink/puzetea.png",
+    "alt": "puzetea",
+    "name": "Цай Puze Tea 480Мл",
+    "price": "1,600₮"
+  },
+  {
+    "src": "img/product-img/drink/sprite.png",
+    "alt": "sprite",
+    "name": "Хүслийн Ундаа Sprite 300Мл",
+    "price": "1,200₮"
+  },
+  {
+    "src": "img/product-img/drink/schwepper.png",
+    "alt": "schwepper",
+    "name": "Ус Schwepper C+ 400Мл",
+    "price": "1,750₮"
+  },
+  {
+    "src": "img/product-img/drink/bonaqua.png",
+    "alt": "bonaqua",
+    "name": "Ус Bon Aqua 500Мл",
+    "price": "1,500₮"
+  }
+]
