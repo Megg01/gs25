@@ -134,6 +134,9 @@ function initMap() {
 
         // let returnValue = "";
 
+        document.getElementsByClassName("location-ul")[0].innerHTML = "";
+
+
         for (i = 0; i < locations.length; i++) {
                 marker = new google.maps.Marker({
                         position: new google.maps.LatLng(
@@ -239,7 +242,7 @@ function showPosition(position) {
 
         var nearestElement = document.getElementById("location-" + nearestLocId);
 
-        listContainer.innerHTML = nearestElement.innerHTML;
+        listContainer.innerHTML = nearestElement.outerHTML;
 
         var nearestMarkers =
                 nearestElement.childNodes[1].childNodes[7].textContent.split(", ");

@@ -92,8 +92,8 @@ class footer extends HTMLElement {
                                         </section>
                                 </section>
                         </article>
+                        <div class="footer-line"></div>
                         <section class="copyright">
-                                <h2></h2>
                                 <p>Copyright &copy2022 Digital Concept. All Rights Reserved</p>
                         </section>
                 `;
