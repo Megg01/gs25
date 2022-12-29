@@ -31,7 +31,7 @@ export default class LocationCard {
                 .then( result => {
                         result.json()
                                 .then(jsob => {
-                                        document.getElementsByClassName(targetElement)[0].insertAdjacentHTML("beforeend",
+                                        document.getElementsByClassName(targetElement)[0].innerHTML =
                                                 jsob.map(locationCard => {
                                                                 const _locationCard = new LocationCardItem(
                                                                         locationCard.name,
@@ -43,7 +43,7 @@ export default class LocationCard {
                                                                 return _locationCard.render();
                                                 })
                                                 .reduce((prevVal, curVal) => prevVal + curVal, "")
-                                        );
+                                        ;
                                 })
                 })
                 .catch(err => {console.log(err)});
