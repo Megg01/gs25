@@ -19,6 +19,7 @@ class AboutCardItem {
                     </article>`;
   }
 }
+
 export default class AboutCard {
   constructor(aboutUrl) {
     this.aboutUrl = aboutUrl;
@@ -36,8 +37,7 @@ export default class AboutCard {
                   aboutCard.src,
                   aboutCard.alt,
                   aboutCard.name,
-                  aboutCard.price,
-                  aboutCard.bonus
+                  aboutCard.paragraph
                 );
                 return _aboutCard.render();
               })
@@ -50,5 +50,5 @@ export default class AboutCard {
       });
   }
 }
-const aboutCard = new AboutCard("./json/about-card.js");
+const aboutCard = new AboutCard("./json/about.json");
 aboutCard.Download("aboutAllItem");

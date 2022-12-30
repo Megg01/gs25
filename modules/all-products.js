@@ -37,30 +37,45 @@ class ProductCardItem {
 }
 
 function haha(data) {
+  var test = 1;
   var productsClassName =
     document.getElementsByClassName("products_list")[0].innerHTML;
+  console.log("ene dugaar shuu", data);
   switch (data) {
     case 1:
-      productsClassName = `<div class="all-products all-Bonus-products"></div>`;
+      document.getElementsByClassName(
+        "products_list"
+      )[0].innerHTML = `<div class="belen_product"></div>`;
       break;
     case 2:
-      productsClassName = `<div class="belen_product"></div>`;
+      document.getElementsByClassName(
+        "products_list"
+      )[0].innerHTML = `<div class="belen_product"></div>`;
       break;
     case 3:
-      productsClassName = `<div class="all-products all-Bonus-products"></div>`;
+      document.getElementsByClassName(
+        "products_list"
+      )[0].innerHTML = `<div class="all-products all-Bonus-products"></div>`;
       break;
     case 4:
-      productsClassName = `<div class="all-products all-Bonus-products"></div>`;
+      document.getElementsByClassName(
+        "products_list"
+      )[0].innerHTML = `<div class="all-products all-Bonus-products"></div>`;
       break;
     case 5:
-      productsClassName = `<div class="all-products all-Bonus-products"></div>`;
+      document.getElementsByClassName(
+        "products_list"
+      )[0].innerHTML = `<div class="all-products all-Bonus-products"></div>`;
       break;
     case 6:
-      productsClassName = `<div class="all-products all-Bonus-products"></div>`;
+      document.getElementsByClassName(
+        "products_list"
+      )[0].innerHTML = `<div class="all-products all-Bonus-products"></div>`;
       break;
   }
 }
-export default class ProductCard {
+
+class ProductCard {
   constructor(productUrl) {
     this.productUrl = productUrl;
   }
@@ -94,7 +109,7 @@ export default class ProductCard {
 
 const productAllCard = new ProductCard("./json/all_product.json");
 const productAllBonusCard = new ProductCard("./json/all_Bonusproduct.json");
-const productBelenCard = new ProductCard("./json/belenProduct.json");
+// const productBelenCard = new ProductCard("./json/belenProduct.json");
 productAllCard.Download("all_products");
 productAllBonusCard.Download("all_Bonus_products");
-productBelenCard.Download("belen_product");
+// productBelenCard.Download("belen_product");
