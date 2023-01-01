@@ -180,9 +180,9 @@ function initMap() {
 }
 function render(location) {
         return `
-        <li id="location-${location.id}" class="for-location-search" onclick="clickLiPopMarker(this.id)">
+        <li id="location-${location.id}" class="for-location-search">
                 <div class="location-card">
-                                <h4>${location.properties.name}</h4>
+                                <h4 onclick="clickLiPopMarker(this.parentNode.parentNode.id)">${location.properties.name}</h4>
                                 <p>${location.properties.description}</p>
                                 <p>${location.properties.time}</p>
                                 <p>${location.ltd[0]}, ${location.ltd[1]}</p>
