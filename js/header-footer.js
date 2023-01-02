@@ -72,10 +72,10 @@ class footer extends HTMLElement {
                                         <section class="app-download">
                                                 <h4>GS25 АПП ТАТАХ</h4>
                                                 <br>
-                                                <a href="https://apps.apple.com/us/app/gs25mn/id1562621269?uo=4">
+                                                <a href="https://apps.apple.com/us/app/gs25mn/id1562621269?uo=4" target="_blank">
                                                         <img src="./img/apple-app-store.png" alt="apple-app-store" width="140px" height="42px">
                                                 </a>
-                                                <a href="https://play.google.com/store/apps/details?id=mn.infinite.gs25&pli=1">
+                                                <a href="https://play.google.com/store/apps/details?id=mn.infinite.gs25&pli=1" target="_blank">
                                                         <img src="./img/google-play-store.png" alt="google-play-store" width="140px" height="42px">
                                                 </a>
                                         </section>

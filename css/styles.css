@@ -687,7 +687,7 @@ main {
         background-color: var(--second-color);
         border: 1px solid var(--text-fill-color);
         border-radius: var(--radius-10);
-        width: 14em;
+        width: 12em;
         /* width: 14vw; */
         height: auto;
         /* height: 16vh; */
@@ -702,7 +702,7 @@ main {
         padding: 0.125em;
         border: 1px solid var(--text-fill-color);
         border-radius: var(--radius-10);
-        width: 18em;
+        width: 16em;
         height: auto;
         margin-right: 0.5em;
 }
@@ -914,7 +914,7 @@ main {
                 display: grid;
                 justify-items: start;
                 grid-gap: 1em;
-                grid-template-columns: 10em 8em auto;
+                grid-template-columns: 9em 8em auto;
                 grid-template-rows: 2em repeat(5, 5em);
         }
 
@@ -929,9 +929,11 @@ main {
         }
 
         .location-list {
-                display: none;
-                z-index: 99;
+                z-index: 3;
                 height: 13em;
+        }
+        .location-list ul{
+                font-size: 90%;
         }
         .location-list ul li div p:last-child {
                 display: none;
