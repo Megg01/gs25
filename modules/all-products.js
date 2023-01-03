@@ -9,7 +9,7 @@ class ProductCardItem {
   render_proCard() {
     if (this.bonus == "") {
       return `
-                          <div class="product-card swiper-slide">
+                          <div class="product-card swiper-slide" onclick="clickProduct(this.className)">
                                   <div class="product-card-img-container"  style="background-image: url('${this.src}');"></div>
                                   <div class="product-card-name">
                                           <h4>${this.name}</h4>
@@ -99,6 +99,7 @@ class ProductCard {
 const productAllCard = new ProductCard("./json/all_product.json");
 const productAllBonusCard = new ProductCard("./json/all_Bonusproduct.json");
 const productBelenCard = new ProductCard("./json/belenProduct.json");
-productAllCard.Download("all_products");
-productAllBonusCard.Download("all_Bonus_products");
-productBelenCard.Download("belen_product");
+
+window.onload = () => {
+  haha(1);
+};
