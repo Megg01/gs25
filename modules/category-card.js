@@ -40,37 +40,37 @@ function Category(datas, targetElement) {
 
 const CategoryData = [
         {
-                href: "#",
+                href: "/product.html?category=belen",
                 src: "https://img.icons8.com/plasticine/100/null/hot-dog.png",
                 alt: "hot-dog",
                 name: "Бэлэн бүтээгдэхүүн"
         },
         {
-                href: "#",
+                href: "/product.html?category=snack",
                 src: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/null/external-chips-brewery-flaticons-lineal-color-flat-icons.png",
                 alt: "chips",
                 name: "Амттан"
         },
         {
-                href: "#",
+                href: "/product.html?category=drink",
                 src: "https://img.icons8.com/plasticine/100/1FB141/kawaii-soda.png",
                 alt: "drink",
                 name: "Шингэн хүнс"
         },
         {
-                href: "#",
+                href: "/product.html?category=fastfood",
                 src: "https://img.icons8.com/plasticine/100/null/noodles.png",
                 alt: "fast-food",
                 name: "Түргэн хоол"
         },
         {
-                href: "#",
+                href: "/product.html?category=ger",
                 src: "https://img.icons8.com/color/100/null/box-tissue.png",
                 alt: "tissue",
                 name: "Ахуйн бараа"
         },
         {
-                href: "#",
+                href: "/product.html?category=bonus",
                 src: "https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/100/null/external-gift-valentines-day-flatart-icons-lineal-color-flatarticons-5.png",
                 alt: "gift",
                 name: "Урамшуулалтай"

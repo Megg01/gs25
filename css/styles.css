@@ -14,10 +14,6 @@ body {
   box-sizing: border-box;
 }
 
-main {
-  /* margin: var(--main-margin); */
-}
-
 .navigation-menu {
   display: flex;
   align-items: center;
@@ -623,7 +619,7 @@ main {
 
 .location-button button:active {
   box-shadow: var(--button-active-box-shadow);
-  transform: var(--button-active-y-translate);
+  transition: translateY(var(--button-active-y-translate));
 }
 
 .location-button {
@@ -743,7 +739,7 @@ main {
 
 .hr-job-card button:active {
   box-shadow: var(--button-active-box-shadow);
-  transform: var(--button-active-y-translate);
+  transform: translateY(var(--button-active-y-translate));
 }
 
 .hr-click-container {
