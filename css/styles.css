@@ -675,32 +675,32 @@ main {
 }
 
 .hr-step-card {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: var(--hr-step-card-padding);
-        background-color: var(--second-color);
-        border: 1px solid var(--text-fill-color);
-        border-radius: var(--radius-10);
-        width: 12em;
-        /* width: 14vw; */
-        height: auto;
-        /* height: 16vh; */
-        margin-right: 0.5em;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--hr-step-card-padding);
+  background-color: var(--second-color);
+  border: 1px solid var(--text-fill-color);
+  border-radius: var(--radius-10);
+  width: 12em;
+  /* width: 14vw; */
+  height: auto;
+  /* height: 16vh; */
+  margin-right: 0.5em;
 }
 
 .hr-job-card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0.125em;
-        border: 1px solid var(--text-fill-color);
-        border-radius: var(--radius-10);
-        width: 16em;
-        height: auto;
-        margin-right: 0.5em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.125em;
+  border: 1px solid var(--text-fill-color);
+  border-radius: var(--radius-10);
+  width: 16em;
+  height: auto;
+  margin-right: 0.5em;
 }
 
 .hr-step-card .hr-step-card-number {
@@ -904,14 +904,14 @@ main {
   /* LOCATION */
   /* LOCATION */
 
-        .location-main {
-                margin: var(--mobile-main-section-margin);
-                display: grid;
-                justify-items: start;
-                grid-gap: 1em;
-                grid-template-columns: 9em 8em auto;
-                grid-template-rows: 2em repeat(5, 5em);
-        }
+  .location-main {
+    margin: var(--mobile-main-section-margin);
+    display: grid;
+    justify-items: start;
+    grid-gap: 1em;
+    grid-template-columns: 9em 8em auto;
+    grid-template-rows: 2em repeat(5, 5em);
+  }
 
   .location-button {
     display: flex;
@@ -923,16 +923,16 @@ main {
     font-size: 70%;
   }
 
-        .location-list {
-                z-index: 3;
-                height: 13em;
-        }
-        .location-list ul{
-                font-size: 90%;
-        }
-        .location-list ul li div p:last-child {
-                display: none;
-        }
+  .location-list {
+    z-index: 3;
+    height: 13em;
+  }
+  .location-list ul {
+    font-size: 90%;
+  }
+  .location-list ul li div p:last-child {
+    display: none;
+  }
 
   .location-map {
     grid-row: 2 / 7;
@@ -1188,6 +1188,10 @@ main {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+.hovertext p {
+  position: absolute;
+  top: 35%;
 }
 
 .about_body {

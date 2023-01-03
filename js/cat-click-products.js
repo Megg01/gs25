@@ -1,3 +1,5 @@
+import clickProduct from "../modules/product-card.js";
+
 class ProductCardItem {
   constructor(src, alt, name, price, bonus) {
     this.src = src;
