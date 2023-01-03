@@ -47,7 +47,7 @@
                 <a href="#" class="cat-list-active">2+1</a>
               </li>
               <li class="cat-list2">
-                <a href="#" class="cat-list-active">Хямдрал%</a>
+                <a href="/product.html?category=bonus" class="cat-list-active">Хямдрал%</a>
               </li>
               <li class="cat-list2">
                 <a href="#" class="cat-list-active">Бэлэгтэй</a>
@@ -60,31 +60,31 @@
         <section class="products-allcategory">
           <section class="products-category">
             <ul class="category-list">
-              <li class="list" onclick="haha(1)">
+              <li class="list" onclick="location.href='product.html?category=all'">
                 <a href="#" class="product-list-cat"> <img src="#" alt />Бүх</a>
               </li>
-              <li class="list" onclick="haha(2)">
+              <li class="list" onclick="location.href='product.html?category=belen'">
                 <a href="#" class="product-list-cat">
                   <img src="img/product-img/belen.png" alt />Бэлэн бүтээгдэхүүн
                 </a>
               </li>
-              <li class="list" onclick="haha(3)">
+              <li class="list" onclick="location.href='product.html?category=drink'">
                 <a href="#" class="product-list-cat"
                   ><img src="img/product-img/drink.png" alt />Шингэн
                   Бүтээгдэхүүн</a
                 >
               </li>
-              <li class="list" onclick="haha(4)">
+              <li class="list" onclick="location.href='product.html?category=snack'">
                 <a href="#" class="product-list-cat"
                   ><img src="img/product-img/desert.png" alt />Амттан</a
                 >
               </li>
-              <li class="list" onclick="haha(5)">
+              <li class="list" onclick="location.href='product.html?category=fastfood'">
                 <a href="#" class="product-list-cat"
                   ><img src="img/product-img/fast-food.png" alt />Түргэн Хоол</a
                 >
               </li>
-              <li class="list" onclick="haha(6)">
+              <li class="list" onclick="location.href='product.html?category=ger'">
                 <a href="#" class="product-list-cat"
                   ><img src="img/product-img/goods.png" alt />Ахуйн Бараа</a
                 >
@@ -92,7 +92,7 @@
             </ul>
           </section>
           <section class="product_list">
-            <section class="all_products all_Bonus_products"></section>
+            <div class="all_products all_Bonus_products"></div>
           </section>
         </section>
       </div>
@@ -102,7 +102,8 @@
     </footer>
     <div class="click_Products"></div>
     <script src="js/header-footer.js"></script>
-    <script type="module" src="js/product-page-products.js"></script>
+    <!-- <script type="module" src="js/product-page-products.js"></script> -->
+    <script type="module" src="js/parameter.js"></script>
     <script src="js/mobilemenu.js"></script>
   </body>
 </html>

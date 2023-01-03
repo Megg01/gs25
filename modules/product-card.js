@@ -65,4 +65,20 @@ export default class ProductCard {
         console.log(err);
       });
   }
+
+  Download1(targetElement){
+    fetch(`${this.productUrl}`, {
+      method: 'GET',
+      headers: {
+        'secret-key': '$2b$10$ANnvIXALFqAYrb8Gwrum0.6JvSyaP7M7BEeZ8hg7UPJGzBOlkNQJi'
+    }
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      document.getElementsByClassName(targetElement)[0].insertAdjacentHTML(
+        "beforeend", data);
+    });
+  }
+
 }
