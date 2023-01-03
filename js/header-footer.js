@@ -34,7 +34,7 @@ class footer extends HTMLElement {
                                 <section class="footer-main-menu footer-col">
                                         <ul>
                                                 <li><h4>ҮНДСЭН ЦЭС</h4></li>
-                                                <li><a href="#">Нүүр хуудас</a></li>
+                                                <li><a href="index.html">Нүүр хуудас</a></li>
                                                 <li><a href="product.html">Бүтээгдэхүүн</a></li>
                                                 <li><a href="location.html">Байршил</a></li>
                                                 <li><a href="hr.html">Хүний нөөц</a></li>
@@ -44,7 +44,7 @@ class footer extends HTMLElement {
                                 <section class="footer-products footer-col">
                                         <ul>
                                                 <li><h4>БҮТЭЭГДЭХҮҮН</h4></li>
-                                                <li><a href="#">Бүх бүтээгдэхүүн</a></li>
+                                                <li><a href="product.html">Бүх бүтээгдэхүүн</a></li>
                                                 <li><a href="#">Бэлэн бүтээгдэхүүн</a></li>
                                                 <li><a href="#">Амттан</a></li>
                                                 <li><a href="#">Шингэн хүнс</a></li>
