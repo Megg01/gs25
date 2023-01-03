@@ -619,7 +619,7 @@ main {
 
 .location-button button:active {
   box-shadow: var(--button-active-box-shadow);
-  transition: translateY(var(--button-active-y-translate));
+  transform: translateY(var(--button-active-y-translate));
 }
 
 .location-button {
