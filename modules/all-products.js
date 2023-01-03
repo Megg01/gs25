@@ -9,7 +9,7 @@ class ProductCardItem {
   render_proCard() {
     if (this.bonus == "") {
       return `
-                          <div class="product-card swiper-slide">
+                          <div class="product-card swiper-slide" onclick="clickProduct(this.className)">
                                   <div class="product-card-img-container"  style="background-image: url('${this.src}');"></div>
                                   <div class="product-card-name">
                                           <h4>${this.name}</h4>
@@ -37,40 +37,29 @@ class ProductCardItem {
 }
 
 function haha(data) {
-  var test = 1;
-  var productsClassName =
-    document.getElementsByClassName("products_list")[0].innerHTML;
+  const productsClassName = document.getElementsByClassName("product_list")[0];
   console.log("ene dugaar shuu", data);
   switch (data) {
     case 1:
-      document.getElementsByClassName(
-        "products_list"
-      )[0].innerHTML = `<div class="belen_product"></div>`;
+      productsClassName.innerHTML = `<div class="all_products all_Bonus_products"></div>`;
+      productAllCard.Download("all_products");
+      productAllBonusCard.Download("all_Bonus_products");
       break;
     case 2:
-      document.getElementsByClassName(
-        "products_list"
-      )[0].innerHTML = `<div class="belen_product"></div>`;
+      productsClassName.innerHTML = `<div class="belen_product"></div>`;
+      productBelenCard.Download("belen_product");
       break;
     case 3:
-      document.getElementsByClassName(
-        "products_list"
-      )[0].innerHTML = `<div class="all-products all-Bonus-products"></div>`;
+      productsClassName.innerHTML = `<div class="amttan_ptoduct"></div>`;
       break;
     case 4:
-      document.getElementsByClassName(
-        "products_list"
-      )[0].innerHTML = `<div class="all-products all-Bonus-products"></div>`;
+      productsClassName.innerHTML = `<div class="Drink"></div>`;
       break;
     case 5:
-      document.getElementsByClassName(
-        "products_list"
-      )[0].innerHTML = `<div class="all-products all-Bonus-products"></div>`;
+      productsClassName.innerHTML = `<div class="all-products all-Bonus-products"></div>`;
       break;
     case 6:
-      document.getElementsByClassName(
-        "products_list"
-      )[0].innerHTML = `<div class="all-products all-Bonus-products"></div>`;
+      productsClassName.innerHTML = `<div class="all-products all-Bonus-products"></div>`;
       break;
   }
 }
@@ -109,7 +98,8 @@ class ProductCard {
 
 const productAllCard = new ProductCard("./json/all_product.json");
 const productAllBonusCard = new ProductCard("./json/all_Bonusproduct.json");
-// const productBelenCard = new ProductCard("./json/belenProduct.json");
-productAllCard.Download("all_products");
-productAllBonusCard.Download("all_Bonus_products");
-// productBelenCard.Download("belen_product");
+const productBelenCard = new ProductCard("./json/belenProduct.json");
+
+window.onload = () => {
+  haha(1);
+};
