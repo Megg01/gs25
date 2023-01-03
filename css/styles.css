@@ -1123,9 +1123,9 @@ main {
 /* About Start */
 .about_title {
   color: var(--main-color);
-  text-align: center;
   font-size: 2em;
   padding: var(--about-margin);
+  text-align: center;
 }
 
 .aboutVision {
@@ -1147,7 +1147,26 @@ main {
   width: 22em;
   height: 17em;
 }
+/* Animation Start*/
 
+.about_items {
+  display: flex;
+  flex-direction: column;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(10em);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0em);
+  opacity: 1;
+}
+
+/* Animation End */
 .about_Card {
   position: relative;
   width: 100%;
@@ -1192,6 +1211,7 @@ main {
 .hovertext p {
   position: absolute;
   top: 35%;
+  left: 8%;
 }
 
 .about_body {
@@ -1241,10 +1261,6 @@ main {
     margin: 0em;
   }
 
-  /* .about_body {
-    display: flex;
-    flex-direction: column;
-  } */
   .aboutAllItem {
     display: grid;
     grid-template-columns: 1fr;
