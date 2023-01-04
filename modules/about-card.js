@@ -6,7 +6,8 @@ class AboutCardItem {
     this.paragraph = paragraph;
   }
   render() {
-    return `          <article class="about_item">
+    return `          
+                    <article class="about_item">
                         <div class="about_img">
                         <img src="${this.src}" alt="about1" />
                         </div>
