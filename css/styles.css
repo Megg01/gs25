@@ -1282,6 +1282,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0em 1em;
+    align-items: center;
   }
 }
 @media (max-height: 450px) {
