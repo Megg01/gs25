@@ -52,7 +52,6 @@ body {
 .nav-item a:hover {
   color: var(--second-color);
 }
-
 /*Styling Hamburger Icon*/
 .hamburger div {
   width: 1.875em;
@@ -991,9 +990,9 @@ main {
     top: 2%;
     right: 1%;
   }
-
-  /* HR END */
 }
+
+/* HR END */
 
 /* Product Start */
 .main-product .product-div {
@@ -1020,7 +1019,6 @@ main {
 .cat-list-active:hover {
   color: white;
   background-color: var(--main-color);
-  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
 }
 
 .list {
@@ -1052,6 +1050,8 @@ main {
 }
 
 .product-list-cat {
+  display: flex;
+  align-items: center;
   width: 18em;
   text-decoration: none;
   color: var(--text-fill-color);
@@ -1061,6 +1061,10 @@ main {
   background-image: url("../img/product-img/submenu.webp");
   background-position: right center;
   background-repeat: no-repeat;
+}
+
+.product-list-cat:focus {
+  background-color: var(--third-color);
 }
 
 .product_list {
@@ -1115,6 +1119,19 @@ main {
   }
   .products-category {
     width: 10em;
+  }
+}
+@media (max-height: 450px) {
+  .heading-product {
+    margin: 1em;
+  }
+  .products-allcategory {
+    margin: 1em;
+  }
+  .all_products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0em;
   }
 }
 
@@ -1264,7 +1281,16 @@ main {
   .aboutAllItem {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0em;
+    margin: 0em 1em;
+  }
+}
+@media (max-height: 450px) {
+  .aboutVision {
+    margin: 0.5em;
+  }
+  .aboutAllItem {
+    width: 50em;
+    margin-left: 3em;
   }
 }
 

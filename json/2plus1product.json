@@ -1,0 +1,65 @@
+[
+  {
+    "src": "img/product-img/2_plus_1_img/chips1.jpeg",
+    "alt": "chips1",
+    "name": "Самар Fishka бэкон 50гр",
+    "price": "1,800₮",
+    "bonus": "2+1"
+  },
+  {
+    "src": "img/product-img/2_plus_1_img/chips2.jpeg",
+    "alt": "chips2",
+    "name": "Самар Fishka зөгийн бал 50гр",
+    "price": "1,800₮",
+    "bonus": "2+1"
+  },
+  {
+    "src": "img/product-img/2_plus_1_img/chips3.jpeg",
+    "alt": "chips3",
+    "name": "Самар Fishka сальями 50гр",
+    "price": "1,800₮",
+    "bonus": "2+1"
+  },
+  {
+    "src": "img/product-img/2_plus_1_img/belengoimon.png",
+    "alt": "belengoimon",
+    "name": "Бэлэн гоймон жантай YouUs 195гр",
+    "price": "4,600₮",
+    "bonus": "2+1"
+  },
+  {
+    "src": "img/product-img/2_plus_1_img/popkorn.png",
+    "alt": "popkorn",
+    "name": "Попкорн youus цөцгийтэй 60гр",
+    "price": "4,500₮",
+    "bonus": "2+1"
+  },
+  {
+    "src": "img/product-img/2_plus_1_img/popkorn2.png",
+    "alt": "popkorn2",
+    "name": "Попкорн YouUS 70гр",
+    "price": "4,800₮",
+    "bonus": "2+1"
+  },
+  {
+    "src": "img/product-img/2_plus_1_img/samar.png",
+    "alt": "samar",
+    "name": "Самар Fishka давсалсан 50гр",
+    "price": "2,100₮",
+    "bonus": "2+1"
+  },
+  {
+    "src": "img/product-img/2_plus_1_img/water.png",
+    "alt": "water",
+    "name": "Ус Super H2O Asahi 600 мл",
+    "price": "2,000₮",
+    "bonus": "2+1"
+  },
+  {
+    "src": "img/product-img/2_plus_1_img/zogiinbal.png",
+    "alt": "zogiinbal",
+    "name": "Халбага зөгийн бал Magic spoon 10гр",
+    "price": "1,600₮",
+    "bonus": "2+1"
+  }
+]
