@@ -46,16 +46,16 @@ class ProductCardItem {
     `;
         }
 }
-function clickProduct(parent_node) {
-        let text1 =
-                document.getElementsByClassName(parent_node)[0].childNodes[3].textContent;
+// Product Card deer darahad parametereer buteegdehuunii ner orj irne jsonoosoo nertei ni jisheed html-eer renderlene.
+function clickProduct(pro_name) {
         let returnValue = "";
+        console.log(pro_name); // test
 
-        text1 = text1.trim(" ");
+        let text1 = pro_name.trim("  ");
 
         for (const data of productDatas) {
+                console.log(text1+"=="+data.name);
                 if (text1.toUpperCase() == data.name.toUpperCase()) {
-                        console.log(text1+"=="+data.name);
                         let obj = new ProductCardItem(data.src, data.alt, data.name, data.price, data.bonus, data.nutri, data.det);
                         returnValue = obj.render_proCard();
                         break;
@@ -67,7 +67,6 @@ function clickProduct(parent_node) {
 function remove(element) {
         element.parentNode.removeChild(element);
 }
-
 const productDatas = [
         {
                 id: "1",
@@ -90,6 +89,36 @@ const productDatas = [
                 alt: "hotdog",
                 name: "Тахиан махан хотдог",
                 price: "3,000₮",
+                bonus: "",
+                nutri: `<li>Илчлэг: 314</li>
+                <li>Өөх тос: 18.6 гр</li>
+                <li>Уураг: 11.4 гр</li>
+                <li>Натри: 810 мг</li>
+                <li>Нүүрс ус: 24.3</li>
+                <li>Элсэн чихэр: 4 гр</li>`,
+                det: "Гурил, үхрийн махан зайдас амтлагч"
+        },
+        {
+                id: "3",
+                src: "img/product-img/product-chicken1.webp",
+                alt: "chicken",
+                name: "Chicken25 /org/ box",
+                price: "22,000₮",
+                bonus: "",
+                nutri: `<li>Илчлэг: 314</li>
+                <li>Өөх тос: 18.6 гр</li>
+                <li>Уураг: 11.4 гр</li>
+                <li>Натри: 810 мг</li>
+                <li>Нүүрс ус: 24.3</li>
+                <li>Элсэн чихэр: 4 гр</li>`,
+                det: "Гурил, үхрийн махан зайдас амтлагч"
+        },
+        {
+                id: "4",
+                src: "img/product-img/product-chicken2.webp",
+                alt: "chicken",
+                name: "Chicken25 MIX box",
+                price: "22,000₮",
                 bonus: "",
                 nutri: `<li>Илчлэг: 314</li>
                 <li>Өөх тос: 18.6 гр</li>

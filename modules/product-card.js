@@ -9,7 +9,7 @@ class ProductCardItem {
   render_proCard() {
     if (this.bonus == "") {
       return `
-                        <div class="product-card swiper-slide" onclick="clickProduct(this.className)">
+                        <div class="product-card swiper-slide" onclick="clickProduct(this.childNodes[3].textContent)">
                                 <div class="product-card-img-container"  style="background-image: url('${this.src}');"></div>
                                 <div class="product-card-name">
                                         <h4>${this.name}</h4>
