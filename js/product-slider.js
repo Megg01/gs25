@@ -1,12 +1,3 @@
-var swiper = new Swiper(".slider-img", {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        loop: true,
-        autoplay: {
-                delay: 6000,
-        }
-})
-
 var swiper = new Swiper(".product-cards", {
         speed:1000,
         slidesPerView: 5,

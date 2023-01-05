@@ -64,7 +64,7 @@ const CategoryData = [
                 name: "Түргэн хоол"
         },
         {
-                href: "/product.html?category=ger",
+                href: "/product.html?category=home",
                 src: "https://img.icons8.com/color/100/null/box-tissue.png",
                 alt: "tissue",
                 name: "Ахуйн бараа"

@@ -13,12 +13,12 @@ const productFastFoodCard = new ProductCard("./json/fastfood.json");
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get("category");
 
-getData(myParam);
+getCategoryData(myParam);
 
 // let req = new XMLHttpRequest();
 // req.onreadystatechange = () => {
 //   if (req.readyState == XMLHttpRequest.DONE) {
-//     console.log(req.responseText);
+//     console.log(req.responseText);;
 //   }
 // };
 
@@ -26,7 +26,7 @@ getData(myParam);
 // req.setRequestHeader("X-Master-Key", "$2b$10$ANnvIXALFqAYrb8Gwrum0.6JvSyaP7M7BEeZ8hg7UPJGzBOlkNQJi");
 // req.send();
 
-export default function getData(myParam) {
+export default function getCategoryData(myParam) {
   switch (myParam) {
     case "all":
       productAllCard.Download("all_products");
@@ -77,7 +77,11 @@ export default function getData(myParam) {
     default:
       console.log(myParam);
       productAllCard.Download("all_products");
+      product1plus1Card.Download("all_products");
       productDrink.Download("all_products");
+      productSaleCard.Download("all_products");
+      productHomeCard.Download("all_products");
+      product2plus1Card.Download("all_products");
       break;
   }
 }

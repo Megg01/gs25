@@ -19,7 +19,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 0;
-  padding: 1.5em 1em 1em 1em;
+  padding: 0.8em 2em;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -235,12 +235,12 @@ footer {
 main {
   display: flex;
   flex-direction: column;
-  margin: 5.25em 0 0 0;
+  margin: 4.8em 0 0 0;
 }
 
 /* SLIDER IMAGE START*/
 .slider-img {
-  margin: 0em 0 2em 0;
+  margin: 0;
 }
 
 .mySlides {
@@ -428,6 +428,54 @@ main {
 .allBonusSwiper .swiper-button-next {
   right: 15%;
 }
+
+/* PRODUCT click */
+
+.clickProduct-container {
+  position: relative;
+  background-color: var(--third-color);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  width: 50em;
+  height: 20em;
+  color: var(--text-fill-color);
+  border: 0.0625em solid var(--text-fill-color);
+  border-radius: var(--radius-10);
+}
+.clickProduct-img-container{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 12em;
+  height: 100%;
+}
+
+.clickProduct-table table{
+  width: 30em;
+}
+.clickProduct-table ul{
+  list-style-type: none;
+}
+.clickProduct-table table, td, th{
+  border: 1px solid var(--text-fill-color);
+  border-collapse: collapse;
+  background-color: var(--bg-color);
+}
+.clickProduct-container button{
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* PRODUCT click END */
 
 /* HOMEPAGE location */
 
@@ -750,17 +798,18 @@ main {
   background-color: var(--third-color);
   padding: 0.5em 2em 2em;
   width: 40em;
-  height: 20em;
+  height: em;
   color: var(--text-fill-color);
   border: 0.0625em solid var(--text-fill-color);
   border-radius: var(--radius-10);
 }
 
-.click-hr-job {
+.click-hr-job , .click-product-card{
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 13;
 }
 
 .hr-click-table {
