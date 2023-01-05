@@ -9,28 +9,58 @@
         <style>
                 @import url(css/var.css);
 
-                .clickProduct {
+                html{
+                        font-family: var(--main-font);
+                }
+                .clickProduct-container {
+                        position: relative;
                         background-color: var(--third-color);
                         display: flex;
-                }
-
-                .clickProduct-table {
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        align-content: center;
+                        align-items: center;
+                        width: 45em;
+                        height: 18em;
+                        color: var(--text-fill-color);
                         border: 0.0625em solid var(--text-fill-color);
                         border-radius: var(--radius-10);
-                        display: flex;
+                }
+                .clickProduct-img-container{
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 12em;
+                        height: 100%;
                 }
 
-                .clickProduct-table:nth-child(0) {
-                        border-right-color: solid var(--text-fill-color);
+                .clickProduct-table table{
+                        width: 30em;
+                }
+                .clickProduct-table table, td, th{
+                        border: 1px solid var(--text-fill-color);
+                        border-collapse: collapse;
+                        background-color: var(--bg-color);
+                }
+                .clickProduct-container button{
+                        position: absolute;
+                        top: 2%;
+                        right: 1%;
+                        font-size: 1.5em;
+                        background: none;
+                        border: none;
+                        cursor: pointer;
                 }
         </style>
 </head>
-
 <body>
-        <div class="clickProduct">
-                <div class="clickProduct-img">
-                        <img src="img/product-img/product-hotdog1.webp" alt="hotdog-icon" />
-                </div>
+        <script>
+                function remove(element) {
+                        element.parentNode.removeChild(element);
+                }
+        </script>
+        <div class="clickProduct-container">
+                <div class="clickProduct-img-container" style="background-image: url('img/product-img/product-hotdog1.webp');"></div>
                 <div class="clickProduct-desc">
                         <div class="clickProduct-name">
                                 <h4>Франкфурт хотдог / бяслагтай /</h4>
@@ -39,27 +69,34 @@
                                 <p>Үнэ: 3,000₮</p>
                         </div>
                         <div class="clickProduct-table">
-                                <div>
-                                        <h5>ТЭЖЭЭЛЛЭГ ЧАНАР (100гр)</h5>
-                                        <div>
-                                                <ul>
-                                                        <li>Илчлэг: 314</li>
-                                                        <li>Өөх тос: 18.6 гр</li>
-                                                        <li>Уураг: 11.4 гр</li>
-                                                        <li>Натри: 810 мг</li>
-                                                        <li>Нүүрс ус: 24.3</li>
-                                                        <li>Элсэн чихэр: 4 гр</li>
-                                                </ul>
-                                        </div>
-                                </div>
-                                <div>
-                                        <h5>ОРЦ НАЙРЛАГА</h5>
-                                        <div>
-                                                <p>Гурил, үхрийн махан зайдас амтлагч</p>
-                                        </div>
-                                </div>
+                                <table>
+                                        <tr>
+                                                <th>
+                                                        Тэжээллэг чанар (100гр)    
+                                                </th>
+                                                <th>
+                                                        Орц найрлага
+                                                </th>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                        <ul>
+                                                                <li>Илчлэг: 314</li>
+                                                                <li>Өөх тос: 18.6 гр</li>
+                                                                <li>Уураг: 11.4 гр</li>
+                                                                <li>Натри: 810 мг</li>
+                                                                <li>Нүүрс ус: 24.3</li>
+                                                                <li>Элсэн чихэр: 4 гр</li>
+                                                        </ul>
+                                                </td>
+                                                <td>
+                                                        <p>Гурил, үхрийн махан зайдас амтлагч</p>        
+                                                </td>
+                                        </tr>
+                                </table>
                         </div>
                 </div>
+                <button onclick="remove(this.parentNode)">x</button>
         </div>
 </body>
 

@@ -29,22 +29,28 @@ class JobItem {
                 </div>
                 `;
         }
+        download(url){
+                fetch(url)
+                        .then(response => response.json())
+                                .then(data => {
+                                        console.log(data);
+                                        return data;
+                        });
+        }
 }
 function clickJob(parent_node){
         let text = document.getElementsByClassName(parent_node)[0].childNodes[3].textContent;
         let returnValue = "";
 
-        
-        for (const data of hrJobData){
-                if(text == data.name){
-                        let obj = new JobItem(
-                              data.name,
-                              data.p_one,
-                              data.p_two
-                        );
-                        returnValue = obj.render();
-                        break;
-                }
+        const datas = hrJobDatas.filter(hrJobData => hrJobData.name == text);
+        console.log(datas[0].name);
+        if(datas.length > 0){
+                let obj = new JobItem(
+                        datas[0].name,
+                        datas[0].p_one,
+                        datas[0].p_two
+                );
+                returnValue = obj.render();
         }
 
         document.getElementsByClassName("click-hr-job")[0].innerHTML = returnValue;
@@ -52,7 +58,7 @@ function clickJob(parent_node){
 function remove(element) {
         element.parentNode.removeChild(element);
 }
-const hrJobData =
+const hrJobDatas =
 [
         {
                 name: "Дэлгүүрийн Ажилтан",

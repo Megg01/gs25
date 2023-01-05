@@ -45,12 +45,12 @@ class footer extends HTMLElement {
                                         <ul>
                                                 <li><h4>БҮТЭЭГДЭХҮҮН</h4></li>
                                                 <li><a href="product.html">Бүх бүтээгдэхүүн</a></li>
-                                                <li><a href="#">Бэлэн бүтээгдэхүүн</a></li>
-                                                <li><a href="#">Амттан</a></li>
-                                                <li><a href="#">Шингэн хүнс</a></li>
-                                                <li><a href="#">Ахуйн бараа</a></li>
-                                                <li><a href="#">Түргэн хоолнууд</a></li>
-                                                <li><a href="#">Урамшуулалтай бүтээгдэхүүн</a></li>
+                                                <li><a href="/product.html?category=belen">Бэлэн бүтээгдэхүүн</a></li>
+                                                <li><a href="/product.html?category=snack">Амттан</a></li>
+                                                <li><a href="/product.html?category=drink">Шингэн хүнс</a></li>
+                                                <li><a href="/product.html?category=home">Ахуйн бараа</a></li>
+                                                <li><a href="/product.html?category=fastfood">Түргэн хоолнууд</a></li>
+                                                <li><a href="/product.html?category=bonus">Урамшуулалтай бүтээгдэхүүн</a></li>
                                         </ul>
                                 </section>
                                 <section class="footer-address footer-col">
