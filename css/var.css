@@ -29,6 +29,11 @@
 
   --mobile-main-section-margin: 6em 1em 0;
 
+  /* Landscape measure */
+  --land-margin: 0 5em;
+
+  /* ======= */
+
   /* for button */
   --button-inner-text-padding: 0.625em;
   /* for "more" button */
