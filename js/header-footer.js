@@ -1,6 +1,9 @@
 class header extends HTMLElement {
-  connectedCallback() {
-    this.parentNode.innerHTML = `
+        constructor(){
+                super();
+        }
+        connectedCallback() {
+                this.parentNode.innerHTML = `
                         <nav class="navigation-menu">
                                 <section class="header-logo">
                                         <a href="index.html">
@@ -19,16 +22,20 @@ class header extends HTMLElement {
                                         <div class="line2"></div>
                                         <div class="line3"></div>
                                 </div>
+                                <cart-comp onclick="location.href='cart.html'"></cart-comp>
                         </nav>
                 `;
-  }
+        }
 }
 
 customElements.define("gs25-header", header);
 
 class footer extends HTMLElement {
-  connectedCallback() {
-    this.parentNode.innerHTML = `
+        constructor(){
+                super();
+        }
+        connectedCallback() {
+                this.parentNode.innerHTML = `
                         <div class="footer-logo" style="background-image:url('./img/gs25-footer.webp');"></div>
                         <article class="footer-all-menu">
                                 <section class="footer-main-menu footer-col">

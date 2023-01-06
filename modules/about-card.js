@@ -51,5 +51,3 @@ export default class AboutCard {
       });
   }
 }
-const aboutCard = new AboutCard("./json/about.json");
-aboutCard.Download("aboutAllItem");
