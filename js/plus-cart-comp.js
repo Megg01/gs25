@@ -10,14 +10,15 @@ class AddCart extends HTMLElement {
         connectedCallback(){
                 this.parentNode.querySelector("add-cart").addEventListener('click', () => {
                         const cart = document.querySelector("cart-comp");
-                        let json = 
+                        const json = 
                                 {
                                 "name": this.parentNode.childNodes[3].textContent.trim(" "),
-                                "src": this.parentNode.childNodes[1].style.backgroundImage,
+                                "src": this.parentNode.childNodes[1].style.backgroundImage.slice(5, -2),
                                 "price": this.parentNode.childNodes[5].textContent.trim(" "),
                                 "unit": 1
-                                }
-                        ;
+                                };
+                        
+                        console.log(this.parentNode.childNodes[1].style.backgroundImage.slice(5, -2));
                         cart.addToCart(json);
                 });
         }

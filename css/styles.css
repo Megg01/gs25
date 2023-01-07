@@ -459,7 +459,6 @@ add-cart {
         border-color: var(--second-color);
         color: black;
         box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.2);
-        cursor: pointer;
 }
 
 .product-card-img-container {
@@ -472,6 +471,9 @@ add-cart {
 
 .product-card-name {
         margin: 0.5em 0 0 0;
+}
+.product-card-name:hover {
+        cursor: pointer;
 }
 
 .product-card-price p {
