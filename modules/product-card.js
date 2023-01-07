@@ -26,14 +26,14 @@ class ProductCardItem {
                         return `
                         <div class="product-card swiper-slide">
                                 <div class="product-card-img-container"  style="background-image: url('${this.src}');"></div>
-                                <div class="bonus-number">${this.bonus}</div>
                                 <div class="product-card-name" onclick="clickProduct(this.childNodes[3].textContent)">
                                         <h4>${this.name}</h4>
                                 </div>
                                 <div class="product-card-price">
                                         <p>${this.price}</p>
                                 </div>
-                                <add-cart></add-cart>
+                                <div class="bonus-number">${this.bonus}</div>
+                                <add-cart title="Сагсанд нэмэх"></add-cart>
                         </div>
                         `;
                 }
