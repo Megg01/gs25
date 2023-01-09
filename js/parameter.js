@@ -66,7 +66,7 @@ export default function getCategoryData(myParam) {
       break;
     case "1plus1":
       console.log(myParam);
-      product1plus1Card.Download("all_products");
+      product1plus1Card.DownloadAPI("all_products");
       break;
     case "sale":
       console.log(myParam);
