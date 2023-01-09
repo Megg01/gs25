@@ -116,22 +116,26 @@ export default class ProductCard {
     fetch(`${this.productUrl}`)
       .then((result) => {
         result.json().then((jsob) => {
-          // const filterProduct = jsob.record.filter()
-          document.getElementsByClassName(targetElement)[0].insertAdjacentHTML(
-            "beforeend",
-            jsob
-              .map((productCard) => {
-                const _productCard = new ProductCardItem(
-                  productCard.src,
-                  productCard.alt,
-                  productCard.name,
-                  productCard.price,
-                  productCard.bonus
-                );
-                return _productCard.render_proCard();
-              })
-              .reduce((prevVal, curVal) => prevVal + curVal, "")
-          );
+          const filterProduct = jsob.filter((items) => (items.bonus = "1+1"));
+          if (filterProduct.length == true) {
+            document
+              .getElementsByClassName(targetElement)[0]
+              .insertAdjacentHTML(
+                "beforeend",
+                filterProduct
+                  .map((productCard) => {
+                    const _productCard = new ProductCardItem(
+                      productCard.src,
+                      productCard.alt,
+                      productCard.name,
+                      productCard.price,
+                      productCard.bonus
+                    );
+                    return _productCard.render_proCard();
+                  })
+                  .reduce((prevVal, curVal) => prevVal + curVal, "")
+              );
+          }
         });
       })
       .catch((err) => {
