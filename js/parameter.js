@@ -35,7 +35,7 @@ export default function getCategoryData(myParam) {
   switch (myParam) {
     case "all":
       productAllCard.Download("all_products");
-      product1plus1Card.DownloadAPI("all_products");
+      product1plus1Card.DownloadAPIFilter("all_products");
       productDrink.Download("all_products");
       productSaleCard.Download("all_products");
       productHomeCard.Download("all_products");
@@ -69,7 +69,7 @@ export default function getCategoryData(myParam) {
       break;
     case "1plus1":
       console.log(myParam);
-      product1plus1Card.DownloadAPI("all_products");
+      product1plus1Card.DownloadAPIFilter("all_products");
       break;
     case "sale":
       console.log(myParam);
@@ -82,7 +82,7 @@ export default function getCategoryData(myParam) {
     default:
       console.log(myParam);
       productAllCard.Download("all_products");
-      product1plus1Card.DownloadAPI("all_products");
+      product1plus1Card.DownloadAPIFilter("all_products");
       productDrink.Download("all_products");
       productSaleCard.Download("all_products");
       productHomeCard.Download("all_products");
