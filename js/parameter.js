@@ -5,7 +5,9 @@ const product1plus1Card = new ProductCard(
   "http://localhost:2000/product1plus1"
 );
 // const product1plus1Card = new ProductCard("http://localhost:2000/");
-const productBelenCard = new ProductCard("./json/belenProduct.json");
+const productBelenCard = new ProductCard(
+  "https://api.jsonbin.io/v3/b/63bc217701a72b59f2463788"
+);
 const product2plus1Card = new ProductCard("./json/2plus1product.json");
 const productDrink = new ProductCard("./json/drink.json");
 const productSaleCard = new ProductCard("./json/Sale.json");
