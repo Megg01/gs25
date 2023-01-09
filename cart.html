@@ -1,122 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="GS25 Mongolia, gs25 mongolia">
-        <meta name="keywords" content="GS25 Mongolia, gs25 mongolia">
-        <meta name="theme-color" content="#FFFDFD">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GS25 Mongolia, gs25 mongolia" />
+    <meta name="keywords" content="GS25 Mongolia, gs25 mongolia" />
+    <meta name="theme-color" content="#FFFDFD" />
 
-        <!-- Primary Meta Tags -->
-        <meta name="title" content="GS25 Mongolia">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="GS25 Mongolia" />
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://gs25.mn/">
-        <meta property="og:title" content="GS25 Mongolia">
-        <meta property="og:description" content="“GS Retail” нь БНСУ-д томоохонд тооцогдох “GS group”-ийн жижиглэн худалдаа, гоо сайхан, гэр ахуйн барааны үйлдвэрлэлийн салбар компани юм.  ">
-        <meta property="og:image" content="https://gs25.mn/cache/images/5/7/2/b/7/572b7fc7db56f78c09ebed5e868982fe595414a6.jpg">
-        <link rel="icon" type="image/webp" href="img/favicon.webp">
-        <link rel="stylesheet" href="./css/styles.css">
-        <title>Сагс</title>
-        <style>
-                main{
-                        margin: 6em 17em 0 17em;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                }
-                .shopping-cart-products{
-                        width: 40vw;
-                        display: grid;
-                        grid-template-columns: repeat(3, 1fr);
-                
-                }
-                .shopping-cart-checkout{
-                        position: relative;
-                        border: 0.2px solid var(--text-fill-color);
-                        height: 80%;
-                }
-                .unit{
-                        position: absolute;
-                        bottom: 0.5em;
-                        right: 0.5em;
-                        display: flex;
-                        flex-direction: row;
-                        gap: 0.5em;
-                        align-items: center;
-                        font-size: 1.2em;
-                }
-                .unit button{
-                        font-size: 1.3em;
-                        background: none;
-                        border: none;
-                }
-                .checkout-card{
-                        display: flex;
-                        flex-direction: row;
-                        gap: 1em;
-                        width: 20em;
-                        border: 1px solid var(--text-fill-color);
-                        padding: 1em 0.5em;
-                }
-                .checkout-button{
-                        display: flex;
-                        flex-direction: row;
-                }
-                .checkout-button button:first-child{
-                        width: 30%;
-                }
-                .checkout-button button:last-child{
-                        width: 70%;
-                }
-                @media screen and (max-width: 1100px) {
-                        main{
-                                margin: 5em 1em 0 1em;
-                        }
-                        .shopping-cart-products{
-                                width: 70vw;
-                                gap: 1em;
-                        }
-                }
-                @media screen and (max-width: 767px) {
-                        .shopping-cart-products{
-                                width: 55vw;
-                                grid-template-columns: 1fr;
-                        }
-                }
-        </style>
-        <script>
-                function removeAll(){
-                        localStorage.removeItem('products');
-                        const comp = document.querySelector('cart-comp');
-                        comp.jsonToCard();
-                        comp.render_cart();
-                }
-        </script>
-</head>
-<body>
-        <header>
-                <gs25-header></gs25-header>
-        </header>
-        <main>
-                <div class="shopping-cart-products"></div>
-                <div class="shopping-cart-checkout-container">
-                        <div class="shopping-cart-checkout">
-
-                        </div>
-                        <div class="checkout-button">
-                                <button onclick="removeAll()">Арилгах</button>
-                                <button>Захиалах</button>
-                        </div>
-                </div>
-        </main>
-        <footer>
-                <gs25-footer></gs25-footer>
-        </footer>
-        <script type="module" src="js/header-footer.js"></script>
-        <script src="js/mobilemenu.js"></script>
-        <script src="js/cart-comp.js"></script>
-</body>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gs25.mn/" />
+    <meta property="og:title" content="GS25 Mongolia" />
+    <meta
+      property="og:description"
+      content="“GS Retail” нь БНСУ-д томоохонд тооцогдох “GS group”-ийн жижиглэн худалдаа, гоо сайхан, гэр ахуйн барааны үйлдвэрлэлийн салбар компани юм.  "
+    />
+    <meta
+      property="og:image"
+      content="https://gs25.mn/cache/images/5/7/2/b/7/572b7fc7db56f78c09ebed5e868982fe595414a6.jpg"
+    />
+    <link rel="icon" type="image/webp" href="img/favicon.webp" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Сагс</title>
+    <style>
+      main {
+        margin: 6em 17em 0 17em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .shopping-cart-products {
+        width: 40vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .shopping-cart-checkout {
+        position: relative;
+        border: 0.2px solid var(--text-fill-color);
+        height: 80%;
+      }
+      .shopping-cart-checkout-container {
+        display: none;
+      }
+      .unit {
+        position: absolute;
+        bottom: 0.5em;
+        right: 0.5em;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        align-items: center;
+        font-size: 1.2em;
+      }
+      .unit button {
+        font-size: 1.3em;
+        background: none;
+        border: none;
+      }
+      .checkout-card {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        width: 20em;
+        border: 1px solid var(--text-fill-color);
+        padding: 1em 0.5em;
+      }
+      .checkout-button {
+        display: flex;
+        flex-direction: row;
+      }
+      .checkout-button button:first-child {
+        width: 30%;
+      }
+      .checkout-button button:last-child {
+        width: 70%;
+      }
+      @media screen and (max-width: 1100px) {
+        main {
+          margin: 5em 1em 0 1em;
+        }
+        .shopping-cart-products {
+          width: 70vw;
+          gap: 1em;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .shopping-cart-products {
+          width: 55vw;
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <script>
+      function removeAll() {
+        localStorage.removeItem("products");
+        const comp = document.querySelector("cart-comp");
+        comp.jsonToCard();
+        comp.render_cart();
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <gs25-header></gs25-header>
+    </header>
+    <main>
+      <div class="shopping-cart-products"></div>
+      <div class="shopping-cart-checkout-container">
+        <div class="shopping-cart-checkout"></div>
+        <div class="checkout-button">
+          <button onclick="removeAll()">Арилгах</button>
+          <button>Захиалах</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <gs25-footer></gs25-footer>
+    </footer>
+    <script type="module" src="js/header-footer.js"></script>
+    <script src="js/mobilemenu.js"></script>
+    <script src="js/cart-comp.js"></script>
+  </body>
 </html>
