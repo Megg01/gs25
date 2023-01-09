@@ -1,7 +1,9 @@
 import ProductCard from "../modules/product-card.js";
 
 const productAllCard = new ProductCard("./json/all_product.json");
-const product1plus1Card = new ProductCard("http://localhost:2000/products");
+const product1plus1Card = new ProductCard(
+  "http://localhost:2000/product1plus1"
+);
 const productBelenCard = new ProductCard("./json/belenProduct.json");
 const product2plus1Card = new ProductCard("./json/2plus1product.json");
 const productDrink = new ProductCard("./json/drink.json");
