@@ -1,7 +1,7 @@
 import ProductCard from "../modules/product-card.js";
 
 const productAllCard = new ProductCard("./json/all_product.json");
-// const product1plus1Card = new ProductCard("./json/1plus1product.json");
+const product1plus1Card = new ProductCard("http://localhost:2000/products");
 const productBelenCard = new ProductCard("./json/belenProduct.json");
 const product2plus1Card = new ProductCard("./json/2plus1product.json");
 const productDrink = new ProductCard("./json/drink.json");
@@ -30,7 +30,7 @@ export default function getCategoryData(myParam) {
   switch (myParam) {
     case "all":
       productAllCard.Download("all_products");
-      product1plus1Card.Download("all_products");
+      product1plus1Card.DownloadAPI("all_products");
       productDrink.Download("all_products");
       productSaleCard.Download("all_products");
       productHomeCard.Download("all_products");
@@ -59,13 +59,13 @@ export default function getCategoryData(myParam) {
       break;
     case "bonus":
       console.log(myParam);
-      product1plus1Card.Download("all_products");
+      product1plus1Card.DownloadAPI("all_products");
       product2plus1Card.Download("all_products");
       break;
-    // case "1plus1":
-    //   console.log(myParam);
-    //   product1plus1Card.Download("all_products");
-    //   break;
+    case "1plus1":
+      console.log(myParam);
+      product1plus1Card.Download("all_products");
+      break;
     case "sale":
       console.log(myParam);
       productSaleCard.Download("all_products");
@@ -77,7 +77,7 @@ export default function getCategoryData(myParam) {
     default:
       console.log(myParam);
       productAllCard.Download("all_products");
-      // product1plus1Card.Download("all_products");
+      product1plus1Card.DownloadAPI("all_products");
       productDrink.Download("all_products");
       productSaleCard.Download("all_products");
       productHomeCard.Download("all_products");
