@@ -116,6 +116,7 @@ export default class ProductCard {
     fetch(`${this.productUrl}`)
       .then((result) => {
         result.json().then((jsob) => {
+          // const filterProduct = jsob.record.filter()
           document.getElementsByClassName(targetElement)[0].insertAdjacentHTML(
             "beforeend",
             jsob
