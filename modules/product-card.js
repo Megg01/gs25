@@ -91,9 +91,7 @@ export default class ProductCard {
     fetch(`${this.productUrl}`)
       .then((result) => {
         result.json().then((jsob) => {
-          const filterProduct = jsob.filter(
-            (product) => product.bonus == "1+1"
-          );
+          const filterProduct = jsob.filter((items) => items.bonus == "1+1");
           if (filterProduct.length > 0) {
             document
               .getElementsByClassName(targetElement)[0]
