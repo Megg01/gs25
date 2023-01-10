@@ -86,38 +86,15 @@ export default class ProductCard {
           .insertAdjacentHTML("beforeend", data);
       });
   }
-  // Database ees localhost:2000/products baigaa json datagaas fetch hiij haruulj bna
-  DownloadAPI(targetElement) {
+
+  DownloadFilter(targetElement) {
     fetch(`${this.productUrl}`)
       .then((result) => {
         result.json().then((jsob) => {
-          document.getElementsByClassName(targetElement)[0].insertAdjacentHTML(
-            "beforeend",
-            jsob
-              .map((productCard) => {
-                const _productCard = new ProductCardItem(
-                  productCard.src,
-                  productCard.alt,
-                  productCard.name,
-                  productCard.price,
-                  productCard.bonus
-                );
-                return _productCard.render_proCard();
-              })
-              .reduce((prevVal, curVal) => prevVal + curVal, "")
+          const filterProduct = jsob.filter(
+            (product) => product.bonus == "1+1"
           );
-        });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
-  DownloadAPIFilter(targetElement) {
-    fetch(`${this.productUrl}`)
-      .then((result) => {
-        result.json().then((jsob) => {
-          const filterProduct = jsob.filter((items) => (items.bonus = "1+1"));
-          if (filterProduct.length == true) {
+          if (filterProduct.length > 0) {
             document
               .getElementsByClassName(targetElement)[0]
               .insertAdjacentHTML(
