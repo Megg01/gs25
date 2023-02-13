@@ -1,4 +1,4 @@
-import "../js/plus-cart-comp.js";
+import "../components/plus-cart-comp.js";
 
 class ProductCardItem {
   constructor(src, alt, name, price, bonus) {
@@ -19,7 +19,7 @@ class ProductCardItem {
                                 <div class="product-card-price">
                                         <p>${this.price}</p>
                                 </div>
-                                <add-cart title="Сагсанд нэмэх"></add-cart>
+                                <add-cart title="Сагсанд нэмэх" style="cursor:pointer"></add-cart>
                         </div>
                         `;
     } else {
@@ -33,7 +33,7 @@ class ProductCardItem {
                                         <p>${this.price}</p>
                                 </div>
                                 <div class="bonus-number">${this.bonus}</div>
-                                <add-cart title="Сагсанд нэмэх"></add-cart>
+                                <add-cart title="Сагсанд нэмэх" style="cursor:pointer"></add-cart>
                         </div>
                         `;
     }
