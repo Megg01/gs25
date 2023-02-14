@@ -67,7 +67,7 @@ class CartComponent extends HTMLElement {
                 }
                 this.innerHTML = `
                         <div class="shopping-cart-container">
-                                <img src="./img/shopping-cart.png" alt="shopping cart" width="40">
+                                <img src="./img/shopping-cart.png" alt="shopping cart" width="40" height="40">
                                 <p class="product-count" style="font-weight: bold;">${this.productNum}</p>
                         </div>
                 `;
@@ -118,9 +118,6 @@ class CartComponent extends HTMLElement {
                         this.productJson = [];
                 }
                 this.jsonToCard();
-        }
-        disconnectedCallback() {
-
         }
         get productCount() {
                 return this.productNum;
