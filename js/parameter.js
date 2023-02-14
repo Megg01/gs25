@@ -14,7 +14,7 @@ const productSaleCard = new ProductCard("./json/Sale.json");
 const productSnackCard = new ProductCard("./json/Snack.json");
 const productHomeCard = new ProductCard("./json/homeProduct.json");
 const productFastFoodCard = new ProductCard("./json/fastfood.json");
-
+//hi
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get("category");
 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="GS25 Mongolia, gs25 mongolia" />
+        <meta name="keywords" content="GS25 Mongolia, gs25 mongolia" />
+        <meta name="theme-color" content="#FFFDFD" />
+
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="GS25 Mongolia" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://gs25.mn/" />
+        <meta property="og:title" content="GS25 Mongolia" />
+        <meta property="og:description"
+                content="“GS Retail” нь БНСУ-д томоохонд тооцогдох “GS group”-ийн жижиглэн худалдаа, гоо сайхан, гэр ахуйн барааны үйлдвэрлэлийн салбар компани юм.  " />
+        <meta property="og:image"
+                content="https://gs25.mn/cache/images/5/7/2/b/7/572b7fc7db56f78c09ebed5e868982fe595414a6.jpg" />
+        <link rel="icon" type="image/webp" href="img/favicon.webp">
+        <link rel="stylesheet" href="./css/styles.css" />
+        <title>Байршил</title>
+</head>
+
+<body>
+        <header>
+                <gs25-header></gs25-header>
+        </header>
+        <main class="location-main">
+                <section class="location-search">
+                        <input type="text" id="locationInput" onkeyup="searchLocation()" placeholder="Дэлгүүр хайх... " />
+                        <section class="location-list">
+                                <ul class="location-ul">
+                                </ul>
+                        </section>
+                </section>
+                <section class="location-button">
+                        <button class="for-location-mobile" onclick="getlocation()">
+                                Хамгийн ойр салбар
+                        </button>
+                        <button class="for-location-mobile" onclick="initMap()">
+                                Бүх салбар
+                        </button>
+                </section>
+                <section class="location-map">
+                        <div id="floating-panel">
+                                <b>Очих төрлөө сонгоно уу: </b>
+                                <select id="direction-mode">
+                                        <option value="WALKING">Алхаж</option>
+                                        <option value="DRIVING">Машинаар</option>
+                                </select>
+                        </div>
+                        <div class="googleMap"> 
+                        </div>
+                </section>
+        </main>
+        <footer>
+                <gs25-footer></gs25-footer>
+        </footer>
+        <script src="./js/header-footer.js"></script>
+        <script src="js/location.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGj-Dsa4PtrJiyATE_upQgOkfEkjFXqoQ&callback=initMap" defer></script>
+        <script src="js/mobilemenu.js"></script>
+        <script src="components/cart-comp.js"></script>
+</body>
+</html>
