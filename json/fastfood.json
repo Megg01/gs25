@@ -1,0 +1,58 @@
+[
+  {
+    "src": "img/product-img/2_plus_1_img/belengoimon.png",
+    "alt": "belengoimon",
+    "name": "Бэлэн гоймон жантай YouUs 195гр",
+    "price": "4,600₮",
+    "bonus": "2+1"
+  },
+  {
+    "src": "img/product-img/Sale_img/food.png",
+    "alt": "food",
+    "name": "Хөлдүү хоол Хуушуур Мини 300г",
+    "price": "8,600₮",
+    "bonus": "20% OFF"
+  },
+  {
+    "src": "img/product-img/Sale_img/goimon.png",
+    "alt": "goimon",
+    "name": "Бэлэн гоймон аягатай 90гр",
+    "price": "2,900₮",
+    "bonus": "15% OFF"
+  },
+  {
+    "src": "img/product-img/product-hotdog1.webp",
+    "alt": "hotdog",
+    "name": "Франкфурт хотдог",
+    "price": "3,000₮",
+    "bonus": ""
+  },
+  {
+    "src": "img/product-img/product-chicken1.webp",
+    "alt": "chicken",
+    "name": "Chicken25 /org/ box",
+    "price": "22,000₮",
+    "bonus": ""
+  },
+  {
+    "src": "img/product-img/product-chicken2.webp",
+    "alt": "chicken",
+    "name": "Chicken25 MIX box",
+    "price": "22,000₮",
+    "bonus": ""
+  },
+  {
+    "src": "img/product-img/product-hotdog2.webp",
+    "alt": "hotdog",
+    "name": "Тахиан махан хотдог",
+    "price": "3,000₮",
+    "bonus": ""
+  },
+  {
+    "src": "img/product-img/product-mantuunbuuz1.webp",
+    "alt": "mantuu",
+    "name": "Мантуун бууз / кимчи /",
+    "price": "1,800₮",
+    "bonus": ""
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1",
+    "src": "img/product-img/product-hotdog1.webp",
+    "alt": "hotdog",
+    "name": "Франкфурт хотдог",
+    "price": "3,000₮",
+    "bonus": ""
+  },
+  {
+    "id": "2",
+    "src": "img/product-img/product-hotdog2.webp",
+    "alt": "hotdog",
+    "name": "Тахиан махан хотдог",
+    "price": "3,000₮",
+    "bonus": ""
+  },
+  {
+    "id": "3",
+    "src": "img/product-img/product-chicken1.webp",
+    "alt": "chicken",
+    "name": "Chicken25 /org/ box",
+    "price": "22,000₮",
+    "bonus": ""
+  },
+  {
+    "id": "4",
+    "src": "img/product-img/product-chicken2.webp",
+    "alt": "chicken",
+    "name": "Chicken25 MIX box",
+    "price": "22,000₮",
+    "bonus": ""
+  },
+  {
+    "id": "5",
+    "src": "img/product-img/product-chicken3.webp",
+    "alt": "chicken",
+    "name": "Chicken25 /sauce/",
+    "price": "4,900₮",
+    "bonus": ""
+  },
+  {
+    "id": "6",
+    "src": "img/product-img/product-pepsi1.webp",
+    "alt": "pepsi",
+    "name": "Pepsi аягатай",
+    "price": "1,600₮",
+    "bonus": ""
+  },
+  {
+    "id": "7",
+    "src": "img/product-img/product-coffee1.webp",
+    "alt": "coffee",
+    "name": "Кафе25 Aмерикано",
+    "price": "3,500₮",
+    "bonus": ""
+  },
+  {
+    "id": "8",
+    "src": "img/product-img/product-mantuunbuuz1.webp",
+    "alt": "mantuu",
+    "name": "Мантуун бууз / кимчи /",
+    "price": "1,800₮",
+    "bonus": ""
+  },
+  {
+    "id": "9",
+    "src": "img/product-img/product-boortsog.webp",
+    "alt": "mantuu",
+    "name": "Боорцог / мушгиа /",
+    "price": "1,000₮",
+    "bonus": ""
+  },
+  {
+    "id": "10",
+    "src": "img/product-img/product-bonus-chips1.webp",
+    "alt": "chips",
+    "name": "Чипс Realprice эрдэнэшиштэй",
+    "price": "7,900₮",
+    "bonus": ""
+  },
+  {
+    "id": "11",
+    "src": "img/product-img/product-bonus-honey.webp",
+    "alt": "honey",
+    "name": "Халбага зөгийн бал 10Гр",
+    "price": "1,600₮",
+    "bonus": ""
+  },
+  {
+    "id": "12",
+    "src": "img/product-img/product-bonus-belengoimon1.webp",
+    "alt": "noodle",
+    "name": "Бэлэн гоймон Chow mein 110г",
+    "price": "5,100₮",
+    "bonus": ""
+  },
+  {
+    "id": "13",
+    "src": "img/product-img/product-bonus-suu2.webp",
+    "alt": "milk",
+    "name": "Сүү Вайб Кафе латте 180 гр",
+    "price": "1,700₮",
+    "bonus": ""
+  }
+]

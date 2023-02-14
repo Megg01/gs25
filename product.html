@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GS25 Mongolia, gs25 mongolia" />
+    <meta name="keywords" content="GS25 Mongolia, gs25 mongolia" />
+    <meta name="theme-color" content="#FFFDFD" />
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="GS25 Mongolia" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gs25.mn/" />
+    <meta property="og:title" content="GS25 Mongolia" />
+    <meta
+      property="og:description"
+      content="“GS Retail” нь БНСУ-д томоохонд тооцогдох “GS group”-ийн жижиглэн худалдаа, гоо сайхан, гэр ахуйн барааны үйлдвэрлэлийн салбар компани юм.  "
+    />
+    <meta
+      property="og:image"
+      content="https://gs25.mn/cache/images/5/7/2/b/7/572b7fc7db56f78c09ebed5e868982fe595414a6.jpg"
+    />
+    <link rel="icon" type="image/webp" href="img/favicon.webp" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Бүтээгдэхүүн</title>
+  </head>
+
+  <body>
+    <header>
+      <gs25-header></gs25-header>
+    </header>
+    <main class="main-product">
+      <div class="product-div">
+        <section class="heading-product">
+          <div>
+            <h3 class="cat-title">УРАМШУУЛАЛ</h3>
+          </div>
+          <div>
+            <ul class="list">
+              <li class="cat-list1">
+                <a href="/product.html?category=1plus1" class="cat-list-active"
+                  >1+1</a
+                >
+              </li>
+              <li class="cat-list1">
+                <a
+                  href="/gs25/product.html?category=2plus1"
+                  class="cat-list-active"
+                  >2+1</a
+                >
+              </li>
+              <li class="cat-list2">
+                <a
+                  href="/gs25/product.html?category=sale"
+                  class="cat-list-active"
+                  >Хямдрал%</a
+                >
+              </li>
+              <li class="cat-list2">
+                <a
+                  href="/gs25/product.html?category=bonus"
+                  class="cat-list-active"
+                  >Бэлэгтэй</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="div1-product">
+        <section class="products-allcategory">
+          <section class="products-category">
+            <ul class="category-list">
+              <li
+                class="list"
+                onclick="location.href='product.html?category=all'"
+              >
+                <a href="#" class="product-list-cat"> <img src="#" alt />Бүх</a>
+              </li>
+              <li
+                class="list"
+                onclick="location.href='product.html?category=belen'"
+              >
+                <a href="#" class="product-list-cat">
+                  <img
+                    src="img/product-img/belen.png"
+                    width="30"
+                    height="30"
+                    alt
+                  />Бэлэн бүтээгдэхүүн
+                </a>
+              </li>
+              <li
+                class="list"
+                onclick="location.href='product.html?category=drink'"
+              >
+                <a href="#" class="product-list-cat"
+                  ><img
+                    src="img/product-img/drink.png"
+                    width="30"
+                    height="30"
+                    alt
+                  />Шингэн Бүтээгдэхүүн</a
+                >
+              </li>
+              <li
+                class="list"
+                onclick="location.href='product.html?category=snack'"
+              >
+                <a href="#" class="product-list-cat"
+                  ><img
+                    src="img/product-img/desert.png"
+                    width="30"
+                    height="30"
+                    alt
+                  />Амттан</a
+                >
+              </li>
+              <li
+                class="list"
+                onclick="location.href='product.html?category=fastfood'"
+              >
+                <a href="#" class="product-list-cat"
+                  ><img
+                    src="img/product-img/fast-food.png"
+                    width="30"
+                    height="30"
+                    alt
+                  />Түргэн Хоол</a
+                >
+              </li>
+              <li
+                class="list"
+                onclick="location.href='product.html?category=home'"
+              >
+                <a href="#" class="product-list-cat"
+                  ><img
+                    src="img/product-img/goods.png"
+                    width="30"
+                    height="30"
+                    alt
+                  />Ахуйн Бараа</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="product_list">
+            <div class="all_products"></div>
+          </section>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <gs25-footer></gs25-footer>
+    </footer>
+    <div class="click-product-card"></div>
+    <script src="js/cat-click-products.js"></script>
+    <script src="js/header-footer.js"></script>
+    <script type="module" src="js/parameter.js"></script>
+    <script src="js/mobilemenu.js"></script>
+    <script src="components/cart-comp.js"></script>
+  </body>
+</html>

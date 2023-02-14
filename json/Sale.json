@@ -1,0 +1,86 @@
+[
+  {
+    "src": "img/product-img/Sale_img/chips1.png",
+    "alt": "chips1",
+    "name": "Чипс O'star кимчитэй 30гр",
+    "price": "2,800₮",
+    "bonus": "10% OFF"
+  },
+  {
+    "src": "img/product-img/Sale_img/chips2.png",
+    "alt": "chips2",
+    "name": "Чипс O'star үхрийн махтай 30гр",
+    "price": "2,800₮",
+    "bonus": "10% OFF"
+  },
+  {
+    "src": "img/product-img/Sale_img/chips3.png",
+    "alt": "chips3",
+    "name": "Чипс Corn халуун ногоотой 35гр",
+    "price": "2,900₮",
+    "bonus": "10% OFF"
+  },
+  {
+    "src": "img/product-img/Sale_img/chips4.png",
+    "alt": "chips4",
+    "name": "Чипс Corn цөцгийн тос 35гр",
+    "price": "2,900₮",
+    "bonus": "10% OFF"
+  },
+  {
+    "src": "img/product-img/Sale_img/coffee1.png",
+    "alt": "coffee1",
+    "name": "Кофе Cappuchino 240Мл",
+    "price": "3,500₮",
+    "bonus": "15% OFF"
+  },
+  {
+    "src": "img/product-img/Sale_img/coffee2.png",
+    "alt": "coffee2",
+    "name": "Кофе Caffe Latte 240Мл",
+    "price": "5,100₮",
+    "bonus": "15% OFF"
+  },
+  {
+    "src": "img/product-img/Sale_img/jaycobsCoffee1.png",
+    "alt": "jaycosCoffee1",
+    "name": "Кофе Jacobs шилтэй 95гр",
+    "price": "20,000₮",
+    "bonus": "15% OFF"
+  },
+  {
+    "src": "img/product-img/Sale_img/jaycobsCoffee2.png",
+    "alt": "jaycosCoffee2",
+    "name": "Кофе үр Jacobs крема 230гр",
+    "price": "21,000₮",
+    "bonus": "20% OFF"
+  },
+  {
+    "src": "img/product-img/Sale_img/jaycobsCoffee3.png",
+    "alt": "jaycosCoffee3",
+    "name": "Кофе үр Jacobs монарх 230гр",
+    "price": "19,600₮",
+    "bonus": "20% OFF"
+  },
+  {
+    "src": "img/product-img/Sale_img/milka.png",
+    "alt": "milka",
+    "name": "Өрмөнцөр Milka шоколадтай 30гр",
+    "price": "2,600₮",
+    "bonus": "15% OFF"
+  },
+  {
+    "src": "img/product-img/Sale_img/food.png",
+    "alt": "food",
+    "name": "Хөлдүү хоол Хуушуур Мини 300г",
+    "price": "8,600₮",
+    "bonus": "20% OFF"
+  },
+  {
+    "src": "img/product-img/Sale_img/goimon.png",
+    "alt": "goimon",
+    "name": "Бэлэн гоймон аягатай 90гр",
+    "price": "2,900₮",
+    "bonus": "15% OFF"
+  }
+]
